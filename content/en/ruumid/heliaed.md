@@ -1,5 +1,6 @@
 ---
 title: "Garden of Sounds"
+draft: true
 translationKey: "heliaed"
 slug: "garden-of-sounds"
 weight: 80
