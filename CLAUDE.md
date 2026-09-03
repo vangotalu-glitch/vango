@@ -25,11 +25,12 @@ npm test             # Playwright suite (starts its own hugo server, see playwri
 ## Deploy model
 
 - **`main` is the live site.** Every push to `origin/main` (`vangotalu-glitch/vango`)
-  deploys automatically via **Cloudflare Workers** (static assets). The Cloudflare
-  project runs build command `hugo --gc --minify` (with `HUGO_VERSION` in its
-  build variables), then `npx wrangler deploy` uploads `./public` per
-  `wrangler.jsonc`. `upstream` is `koorikla/vango`. CI (`ci.yml`) still runs a
-  Hugo build + the E2E suite on every push and PR.
+  deploys automatically via **Cloudflare Pages** (Git integration, no workflow).
+  The Pages project builds with `hugo --gc --minify` (Hugo preset, `HUGO_VERSION`
+  set as a build environment variable) and serves `public/`; `static/_redirects`
+  and `static/_headers` are picked up automatically. `upstream` is
+  `koorikla/vango`. CI (`ci.yml`) still runs a Hugo build + the E2E suite on
+  every push and PR.
 - The user has granted push rights via the `gh` CLI. Since `main` publishes,
   push to `main` only when the change is complete and verified; otherwise use a
   branch + PR.

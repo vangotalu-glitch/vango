@@ -3,10 +3,6 @@
 /resources/
 .hugo_build.lock
 
-# Cloudflare Wrangler local state
-/.wrangler/
-.dev.vars
-
 # Node (only used for the Playwright E2E tests)
 /node_modules/
 /test-results/
