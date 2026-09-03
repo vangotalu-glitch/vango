@@ -1,0 +1,15 @@
+{
+  // Static-assets Worker: Hugo builds the site into ./public (the Cloudflare
+  // project's build command is `hugo --gc --minify`, with HUGO_VERSION set in
+  // the project's build variables), and `wrangler deploy` uploads that folder.
+  // Without this file wrangler runs its own framework detection and tries
+  // `npx hugo`, which does not exist — that was the build failure.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vango",
+  "compatibility_date": "2026-08-31",
+  "assets": {
+    // public/_redirects and public/_headers (from static/) are honoured here,
+    // same as they were on Pages.
+    "directory": "./public"
+  }
+}
