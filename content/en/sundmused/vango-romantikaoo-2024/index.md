@@ -10,10 +10,10 @@ eventEnd: 2024-08-18
 location: "Vango Wonderland"
 ---
 
-As part of the Romantic Coastal Road summer, Vango's shore hosted a
-Romantic Night — a weekend stretching from Friday afternoon into Saturday
-afternoon that carried listeners from Mari Jürjens's tender, airy songs to
-Sepo Seeman's true-to-life, thought-provoking stories about men and women.
+The Romantic Coastal Road marked a Romantic Night in late August: a
+weekend stretching from Friday afternoon into Saturday afternoon carried
+listeners from Mari Jürjens's tender, airy songs to Sepo Seeman's
+true-to-life, thought-provoking stories about men and women.
 
 Under cover of darkness, magical beings and fire spirits came out to play along the lake's shore.
 

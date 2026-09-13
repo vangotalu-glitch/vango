@@ -10,8 +10,8 @@ eventEnd: 2024-08-18
 location: "Vango Imedemaa"
 ---
 
-Romantilise Rannatee suve raames kestis Vango kaldal Romantikaöö — reede
-õhtupoolikust laupäeva pärastlõunani ulatunud nädalalõpp, mis viis kuulajad
+Romantiline rannatee tähistas augusti lõpus Romantikaööd: reede
+õhtupoolikust laupäeva pärastlõunani ulatunud nädalalõpp viis kuulajad
 Mari Jürjensi õrnadest ja õhulistest lauludest Sepo Seemani eluliste ja
 mõtlemapanevate lugudeni meestest ja naistest.
 
