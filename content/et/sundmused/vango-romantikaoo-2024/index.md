@@ -15,12 +15,7 @@ Romantilise Rannatee suve raames kestis Vango kaldal Romantikaöö — reede
 Mari Jürjensi õrnadest ja õhulistest lauludest Sepo Seemani eluliste ja
 mõtlemapanevate lugudeni meestest ja naistest.
 
-Kavas oli ka teatrietendus "Maagiline Maailm", ning ööpimeduse varjus said
-tiigi kaldal liikvele haldjad ja tulejumalad.
-
-Lava ja kaunistuste eest hoolitses Sinilind ehitus. Suur tänu kõigile, kes
-selle nädalalõpu võimalikuks tegid: Kati, Einar ja Albert, Aleks, Jorma,
-Siim, Marten, Priit ja Kaur!
+Ööpimeduse varjus asusid järve kaldal liikvele maagilised olendid ja tulejumalad.
 
 ## Tuletseremoonia
 
