@@ -11,6 +11,7 @@ gallery:
   - "img/uploads/2023-11-saun_duss-scaled.jpg"
   - "img/uploads/2023-11-saun_keris-scaled.jpg"
   - "img/uploads/2023-11-saun_tuba_parem-scaled.jpg"
+  - "img/uploads/2026-09-kumblustunn-terrass.jpg"
 animations:
   - "img/uploads/2020-04-taimed1.png"
 capacity: "Majutab: teisel korrusel 11 voodit, all kööktoas lisaks diivanvoodi."
