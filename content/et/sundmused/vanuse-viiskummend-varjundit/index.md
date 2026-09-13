@@ -4,7 +4,7 @@ translationKey: "sundmused-vanuse-varjundid"
 slug: "monokomoodia-vanuse-viiskummend-varjundit"
 date: 2026-08-16
 summary: "Andres Dvinjaninov tuli Imedemaale rääkima sellest, mis aastatega kaasa tuleb."
-cover: "vaatajad-lava-ees.jpg"
+cover: "etendus-laval.jpg"
 eventDate: 2026-08-16
 location: "Vango Imedemaa"
 ---
