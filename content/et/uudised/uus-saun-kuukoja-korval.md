@@ -2,7 +2,7 @@
 title: "Kuukoja kõrvale kerkis uus saun"
 translationKey: "uudised-uus-saun"
 slug: "kuukoja-korvale-kerkis-uus-saun"
-date: 2025-06-23
+date: 2026-05-23
 summary: "Puukerisega saun järve pervel — ja nimi, mida otsisime koos."
 cover: "img/uploads/2015-01-kuukoda_fassaad-scaled.jpg"
 ---
