@@ -4,6 +4,7 @@ translationKey: "sundmused-fotopuhkus-2025"
 slug: "fotopuhkus-2025"
 date: 2025-06-08
 summary: "Kolm päeva kostüüme, kaameraid ja metsavalgust — fotograafide kokkutulek Imedemaal."
+cover: "img/uploads/2025-06-fotopuhkus-kaanepilt.jpg"
 eventDate: 2025-06-06
 eventEnd: 2025-06-08
 location: "Vango Imedemaa"
