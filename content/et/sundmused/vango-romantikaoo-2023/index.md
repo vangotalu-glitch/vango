@@ -6,7 +6,6 @@ date: 2023-08-18
 summary: "Kontserdiõhtu kahes vaatuses — Alamakstud Härrad avasid õhtu ja hilisõhtul lummasid publikut Marek Sadam koos Martin Trudnikoviga."
 cover: "2023-08-alamakstud-harrad-lava.jpg"
 eventDate: 2023-08-18
-eventEnd: 2023-08-18
 location: "Vango Imedemaa"
 ---
 
