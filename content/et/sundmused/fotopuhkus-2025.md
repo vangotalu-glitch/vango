@@ -10,7 +10,9 @@ location: "Vango Imedemaa"
 ---
 
 Juunis 2025 kogunes Imedemaale seltskond fotograafe ja modelle, et veeta kolm
-päeva kaamerate, kostüümide ja metsavalguse keskel — FotoPuhkus.
+päeva kaamerate, kostüümide ja metsavalguse keskel — Tarmo Siiraku korraldataval
+FotoPuhkusel. Fotohuviliste seas populaarne ja traditsiooniline sündmus jõudis
+2025. aastal juba oma 11. toimumiskorrani.
 
 Õuel ja metsaservas said kokku fantaasiakostüümides modellid ja neid
 jäädvustavad fotograafid, vanas palkmajas said riietusruumis viimased

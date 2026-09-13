@@ -10,7 +10,9 @@ location: "Vango Wonderland"
 ---
 
 In June 2025 a group of photographers and models gathered at the Wonderland
-for three days of cameras, costumes and forest light — FotoPuhkus.
+for three days of cameras, costumes and forest light — FotoPuhkus, organised by
+Tarmo Siirak. A popular and long-running event among photography enthusiasts, it
+reached its 11th edition in 2025.
 
 Out in the yard and at the forest's edge, models in fantasy costumes posed
 for the photographers capturing them; in the old log house, a dressing room
