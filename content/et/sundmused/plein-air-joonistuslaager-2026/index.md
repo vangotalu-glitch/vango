@@ -1,5 +1,5 @@
 ---
-title: "Vabaõhu aktijoonistuslaager Vangos"
+title: "Vabaõhu aktijoonistuslaager"
 translationKey: "sundmused-plein-air-joonistuslaager-2026"
 slug: "plein-air-joonistuslaager-2026"
 date: 2026-08-21

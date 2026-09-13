@@ -1,5 +1,5 @@
 ---
-title: "Plein Air Life Drawing Camp at Vango"
+title: "Plein Air Life Drawing Camp"
 translationKey: "sundmused-plein-air-joonistuslaager-2026"
 slug: "plein-air-drawing-camp-2026"
 date: 2026-08-21
