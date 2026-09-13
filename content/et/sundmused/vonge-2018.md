@@ -16,8 +16,8 @@ suurim sündmus, mis siin seni peetud.
 Võnge ei olnud kunagi suur festival selle sõna tavalises tähenduses. Väiksed
 lavad, akustilised kavad, päevased kontserdid ja rohkem lõõgastumist kui
 öist tantsu. Pigem loodusesse minek, millel on pilet, kui festival. Just
-sellepärast see siia sobiski: Heliaia lava all mahub korraga sadu inimesi, aga
-mets ümberringi hoiab kõik ikkagi omavaheliseks.
+sellepärast see siia sobiski: Heliaia lava alla mahub korraga sadu inimesi, aga
+mets ümberringi hoiab kõik ikkagi omade vahel.
 
 Jaan Pehk astus Valmiermuiža laval üles 7. juulil. Inimene on looduse kroon.
 
