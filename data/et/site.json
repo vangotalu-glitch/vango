@@ -55,12 +55,6 @@
     "title": "Partnerid",
     "items": [
       {
-        "name": "Livonia Matkad",
-        "url": "http://www.livoniamatkad.ee/",
-        "logo": "img/uploads/2020-04-livonia-1.jpg",
-        "contain": false
-      },
-      {
         "name": "Seikluspartner",
         "url": "https://www.facebook.com/seikluspartner/",
         "logo": "img/uploads/2020-04-seikluspartner-1.png",
