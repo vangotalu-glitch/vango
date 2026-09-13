@@ -21,10 +21,7 @@ Sauron Gorthauer or as knights of Ast-Ahë, students of Melkor. The game's
 world drew inspiration from the novel "On the Far Side of Dawn," set 6000
 years before the events of The Lord of the Rings.
 
-The three-day, two-night "all-inclusive" event brought together up to 60
-players, with Vango Wonderland providing accommodation in tents, shared
-rooms, or double rooms, along with full board from Friday evening through
-Sunday morning.
+The three-day, two-night event brought together a hundred players.
 
 Thank you to EDULARP MTÜ, led by Sasha Volkova, and to all the brave
 players of Light and Darkness — see you at the next adventure!

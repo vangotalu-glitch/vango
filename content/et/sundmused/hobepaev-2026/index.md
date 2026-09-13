@@ -21,10 +21,7 @@ Pimedusega Sauron Gorthaueri orkide või Melkori õpilaste, Ast-Ahë rüütlite
 kujul. Mängu maailm ammutas inspiratsiooni romaanist "Teisel pool koitu",
 mis viib lugeja 6000 aastat enne "Sõrmuste Isanda" sündmusi.
 
-Kolm päeva ja kaks ööd kestnud "all-inclusive" formaadis sündmusele kogunes
-kuni 60 mängijat, kellele Vango Imedemaa pakkus majutust nii telgis,
-ühistoas kui kahekohalises toas, ning täispansioni toitlustust reede
-õhtust pühapäeva hommikuni.
+Kolm päeva ja kaks ööd kestnud sündmusele kogunes sada mängijat.
 
 Aitäh, EDULARP MTÜ eesotsas Saša Volkovaga, ja kõik vaprad Valguse ja
 Pimeduse mängijad — kohtumiseni järgmisel seiklusel!
