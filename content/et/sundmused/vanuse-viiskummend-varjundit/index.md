@@ -4,15 +4,20 @@ translationKey: "sundmused-vanuse-varjundid"
 slug: "monokomoodia-vanuse-viiskummend-varjundit"
 date: 2025-07-15
 summary: "Andres Dvinjaninov tuli Imedemaale rääkima sellest, mis aastatega kaasa tuleb."
+<<<<<<< HEAD:content/et/sundmused/vanuse-viiskummend-varjundit/index.md
 cover: "vaatajad-lava-ees.jpg"
 eventDate: 2025-08-16
+=======
+cover: "img/uploads/2015-01-heliaed-scaled-e1620747557721.jpg"
+eventDate: 2026-08-16
+>>>>>>> 658c0aa51e50ebfda168d3b1cd922f8689222841:content/et/sundmused/vanuse-viiskummend-varjundit.md
 location: "Vango Imedemaa"
 ---
 
 Kas 50 on uus 30 või lihtsalt vanus, mil prille otsides avastad, et need on
 sul peas?
 
-Augustilaupäeval jõudis Imedemaale Andres Dvinjaninovi monokomöödia „Vanuse
+Augustikuu pühapäeval jõudis Imedemaale Andres Dvinjaninovi monokomöödia „Vanuse
 viiskümmend varjundit“. Teravmeelselt sai läbi võetud kõik see, mis aastatega
 kaasas käib: unustamine, tervis, abielu, juuksevärv, kehakaal, pidutsemine,
 treeninghüsteeria ja salapärane nähtus nimega noor hing vanemas pakendis.
