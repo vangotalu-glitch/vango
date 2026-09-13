@@ -20,7 +20,7 @@ Neli päeva ja kolm ööd kestnud sündmuse jooksul muutusid Vango hooned ja
 õued süngeks ning salapäraseks maailmaks, kus lambivalgel ja kaminatule
 paistel põimusid vandenõud, liitlassuhted ja saladused.
 
-Aitäh kõigile mängijatele ja korraldajatele, kes tõid oma loo Vangosse ellu
+Aitäh kõigile mängijatele ja korraldajatele, kes tõid oma loo Vangosse
 — kohtumiseni järgmisel seiklusel!
 
 [Vaata rohkem fotosid](https://robin-and-fern.pixieset.com/thelesserevil/)
