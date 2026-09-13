@@ -20,5 +20,8 @@ päeval, vahele mahtus matk ning laupäeva õhtul sai end saunas ja mullivannis
 lõdvaks lasta. Õhtuti kõlas hea seltskond ja rahulik õhtusöök, päevad
 täitusid loomingu ja avastamisega.
 
+Nädalavahetus kujunes tormiseks ja vihmaseks, pannes proovile nii modellid
+kui kunstnikud — aga kõigest saab üle sooja suhtumisega!
+
 Aitäh, Drink and Draw Eesti, ja kõik toredad kunstnikud — kohtumiseni
 järgmisel korral!

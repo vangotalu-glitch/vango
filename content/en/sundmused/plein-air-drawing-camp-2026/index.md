@@ -20,5 +20,8 @@ on the following two days, a hike in between, and a relaxing sauna and hot
 tub on Saturday night. Evenings brought good company and unhurried dinners,
 while the days were filled with creativity and discovery.
 
+The weekend turned out stormy and rainy, putting both the models and the
+artists to the test — but a warm attitude gets you through anything!
+
 Thank you, Drink and Draw Estonia, and all the wonderful artists — see you
 next time!
