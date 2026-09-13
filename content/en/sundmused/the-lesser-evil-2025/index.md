@@ -1,5 +1,5 @@
 ---
-title: "\"The Lesser Evil\": an international LARP at Vango"
+title: "\"The Lesser Evil\": an international LARP"
 translationKey: "sundmused-the-lesser-evil-2025"
 slug: "the-lesser-evil-2025"
 date: 2025-10-02
