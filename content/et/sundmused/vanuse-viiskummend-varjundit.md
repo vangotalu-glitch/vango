@@ -2,7 +2,7 @@
 title: "Monokomöödia „Vanuse viiskümmend varjundit“"
 translationKey: "sundmused-vanuse-varjundid"
 slug: "monokomoodia-vanuse-viiskummend-varjundit"
-date: 2025-07-15
+date: 2026-08-16
 summary: "Andres Dvinjaninov tuli Imedemaale rääkima sellest, mis aastatega kaasa tuleb."
 cover: "img/uploads/2015-01-heliaed-scaled-e1620747557721.jpg"
 eventDate: 2026-08-16

@@ -4,7 +4,7 @@ translationKey: "sundmused-vanuse-varjundid"
 date: 2026-08-16
 summary: "Andres Dvinjaninov came to the Wonderland to talk about what the years bring with them."
 cover: "img/uploads/2015-01-heliaed-scaled-e1620747557721.jpg"
-eventDate: 2025-08-16
+eventDate: 2026-08-16
 location: "Vango Wonderland"
 ---
 
