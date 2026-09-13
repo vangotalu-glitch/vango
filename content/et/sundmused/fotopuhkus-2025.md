@@ -17,8 +17,7 @@ FotoPuhkusel. Fotohuviliste seas populaarne ja traditsiooniline sündmus jõudis
 
 Õuel ja metsaservas said kokku fantaasiakostüümides modellid ja neid
 jäädvustavad fotograafid, vanas palkmajas said riietusruumis viimased
-detailid paika ning õhtuti kogunes kogu seltskond ühise laua taha. Kavas oli
-ka Liviko gin'i koolitus sommelier Asser Kalna eestvedamisel.
+detailid paika ning õhtuti kogunes kogu seltskond ühise laua taha. 
 
 Kolm päeva täis loomingut, häid vestlusi ja rahulikku Pärnumaa metsa — just
 selline kombinatsioon, mida FotoPuhkuselt oodatakse.

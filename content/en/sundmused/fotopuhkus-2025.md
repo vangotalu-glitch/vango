@@ -18,8 +18,7 @@ reached its 11th edition in 2025.
 Out in the yard and at the forest's edge, models in fantasy costumes posed
 for the photographers capturing them; in the old log house, a dressing room
 held the last details in place, and in the evenings everyone gathered around
-one long table. The programme also included a Liviko gin tasting led by
-sommelier Asser Kalna.
+one long table. 
 
 Three days full of creativity, good conversation, and quiet Pärnumaa forest —
 exactly the combination FotoPuhkus is known for.
