@@ -3,7 +3,7 @@ title: "Stand-up: “Fifty Shades of Age”"
 translationKey: "sundmused-vanuse-varjundid"
 date: 2025-07-15
 summary: "Andres Dvinjaninov came to the Wonderland to talk about what the years bring with them."
-cover: "img/uploads/2015-01-heliaed-scaled-e1620747557721.jpg"
+cover: "vaatajad-lava-ees.jpg"
 eventDate: 2025-08-16
 location: "Vango Wonderland"
 ---
