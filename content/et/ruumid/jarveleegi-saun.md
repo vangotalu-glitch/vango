@@ -6,6 +6,7 @@ weight: 95
 hero: "img/uploads/2026-05-jarveleegi-saun-valisvaade.jpg"
 gallery:
   - "img/uploads/2026-05-jarveleegi-saun-aken.jpg"
+  - "img/uploads/2026-05-jarveleegi-saun-riietusruum.jpg"
 animations:
   - "img/uploads/2020-04-fire.png"
 capacity: "Mahutab: kuni 8 saunalist korraga."
