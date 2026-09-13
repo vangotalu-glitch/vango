@@ -3,7 +3,7 @@ title: "Stand-up: “Fifty Shades of Age”"
 translationKey: "sundmused-vanuse-varjundid"
 date: 2026-08-16
 summary: "Andres Dvinjaninov came to the Wonderland to talk about what the years bring with them."
-cover: "img/uploads/2015-01-heliaed-scaled-e1620747557721.jpg"
+cover: "vaatajad-lava-ees.jpg"
 eventDate: 2026-08-16
 location: "Vango Wonderland"
 ---
@@ -11,7 +11,7 @@ location: "Vango Wonderland"
 Is fifty the new thirty, or simply the age at which you go looking for your
 glasses and find them on your head?
 
-On a Saturday in August, Andres Dvinjaninov's one-man comedy “Fifty Shades of
+On a Sunday in August, Andres Dvinjaninov's one-man comedy “Fifty Shades of
 Age” arrived at the Wonderland. It took apart, sharply and fondly, everything
 that comes along with the years: forgetting, health, marriage, hair colour,
 body weight, partying, gym hysteria, and that mysterious phenomenon known as a
