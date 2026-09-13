@@ -16,10 +16,6 @@ eelarvestamist ning hindasime väliseid ja sisemisi riske. Vaatasime üle,
 mida on veel vaja teha ekspordistrateegia täiendamiseks, ja said kokku
 paljud Eesti põnevaimad majutuskohad, et kogemusi jagada.
 
-Koolitajaks oli Kadi Elmeste, külalisesinejaks endise Hektor
-Konteinerhotelli esindaja — huvitav oli kuulata nii nende hotellipidamise
-lugu kui ka seda, kui palju julgust nõuab raske otsus äritegevus lõpetada.
-
 Programmis osalesid muuhulgas Padise Mõis, Wagenküll Spa, The MANOR
 Sports & Spa, Schloss Fellin, Sauga Kalurikula, Hara sadama iglukämpingud,
 Kodas, Dharma Resort, Old Hapsal Hotel, Jõesviit, Sörwespa ja Kuul Villas

@@ -17,11 +17,6 @@ what's still needed to round out our export strategy, and many of
 Estonia's most interesting places to stay came together to share
 experiences.
 
-The trainer was Kadi Elmeste, with a guest talk from a former
-representative of Hektor Konteinerhotell — it was fascinating to hear both
-their hotel-keeping story and how much courage it takes to make the hard
-call to close a business.
-
 Fellow participants included Padise Manor, Wagenküll Spa, The MANOR
 Sports & Spa, Schloss Fellin, Sauga Fishing Village, the Hara harbour
 igloo camp, Kodas, Dharma Resort, Old Hapsal Hotel, Jõesviit, Sörwespa
