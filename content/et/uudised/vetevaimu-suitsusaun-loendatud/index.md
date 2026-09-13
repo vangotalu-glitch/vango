@@ -4,7 +4,7 @@ translationKey: "uudised-suitsusauna-loendus"
 slug: "vetevaimu-suitsusaun-loendatud"
 date: 2025-09-22
 summary: "Meie suitsusaun on nüüd üks esimestest 560-st, mis üle-eestilisse suitsusaunade nimistusse kantud."
-cover: "img/uploads/2025-09-suitsusauna-loendus-kaart.jpg"
+cover: "suitsusauna-loendus-kaart.jpg"
 ---
 
 Meie pisike armas [Vetevaimu suitsusaun](/ruumid/vetevaimu-suitsusaun/) on üle

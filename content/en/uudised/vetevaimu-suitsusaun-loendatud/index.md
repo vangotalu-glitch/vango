@@ -3,7 +3,7 @@ title: "Our Smoke Sauna Joins the National Register"
 translationKey: "uudised-suitsusauna-loendus"
 date: 2025-09-22
 summary: "Our smoke sauna is now among the first 560 listed in an Estonia-wide register of smoke saunas."
-cover: "img/uploads/2025-09-suitsusauna-loendus-kaart.jpg"
+cover: "suitsusauna-loendus-kaart.jpg"
 ---
 
 Our dear little [Water Guardian's Smoke Sauna](/en/ruumid/water-guardians-smoke-sauna/)
