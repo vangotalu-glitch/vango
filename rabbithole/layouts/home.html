@@ -3,14 +3,16 @@
 {{- $book := site.GetPage "/book" }}
 
 <section class="hero" aria-labelledby="hero-title">
-  {{- with $p.hero.image }}
-  <div class="hero__image" style="background-image:url('{{ . | relURL }}')"></div>
-  {{- end }}
+  {{- with $p.hero.video }}
+  {{ partial "video.html" (dict "src" . "poster" ($p.hero.poster | default $p.hero.image) "class" "hero__image") }}
+  {{- else }}{{ with $p.hero.image }}
+  <img class="hero__image" src="{{ . | relURL }}" alt="" fetchpriority="high">
+  {{- end }}{{ end }}
   <div class="hero__mist" aria-hidden="true"></div>
   <div class="hero__inner">
     <span class="hero__mark" aria-hidden="true">{{ partial "svg-keyhole.html" . | safeHTML }}</span>
     <p class="eyebrow">{{ $p.hero.kicker }}</p>
-    <h1 id="hero-title" class="hero__title">{{ $p.hero.title }}</h1>
+    <h1 id="hero-title" class="sr">{{ $p.hero.kicker }}</h1>
     <p class="hero__lead">{{ $p.hero.lead }}</p>
     <div class="hero__actions">
       <a class="btn btn--gold" href="{{ $book.RelPermalink }}">{{ $p.hero.cta }}</a>
@@ -36,13 +38,17 @@
     </div>
     <ul class="space__grid">
       {{- range $i, $it := $p.space.items }}
+      {{- $sub := "" }}{{ with $it.page }}{{ $sub = site.GetPage . }}{{ end }}
       <li class="tile reveal{{ if eq (mod $i 2) 1 }} tile--alt{{ end }}">
-        <div class="tile__media{{ if not $it.image }} tile__media--empty{{ end }}"{{ with $it.image }} style="background-image:url('{{ . | relURL }}')"{{ end }}>
+        {{ if $sub }}<a class="tile__media{{ if not $it.image }} tile__media--empty{{ end }}" href="{{ $sub.RelPermalink }}" aria-label="{{ $it.name }}">{{ else }}<div class="tile__media{{ if not $it.image }} tile__media--empty{{ end }}">{{ end }}
+          {{- with $it.image }}<img src="{{ . | relURL }}" alt="{{ $it.name }}" loading="lazy" decoding="async">{{ end }}
           {{- if not $it.image }}<span class="tile__glyph" aria-hidden="true">{{ partial "svg-keyhole.html" . | safeHTML }}</span>{{ end }}
-        </div>
+          {{- if $sub }}<span class="tile__play" aria-hidden="true"></span>{{ end }}
+        {{ if $sub }}</a>{{ else }}</div>{{ end }}
         <div class="tile__body">
           <h3 class="tile__name">{{ $it.name }}</h3>
           <p>{{ $it.text }}</p>
+          {{- with $sub }}<a class="link tile__more" href="{{ .RelPermalink }}">{{ i18n "lookInside" }} →</a>{{ end }}
         </div>
       </li>
       {{- end }}
@@ -117,6 +123,12 @@
       <p class="location__coords">N 58°07′53″ · E 24°45′45″</p>
       <a class="link" href="{{ site.Params.mapUrl }}" rel="noopener">{{ $p.location.mapLabel }}</a>
     </div>
+    {{- with $p.location.video }}
+    <figure class="location__video">
+      {{ partial "video.html" (dict "src" . "poster" $p.location.poster "class" "") }}
+      <figcaption>{{ i18n "wayIn" }}</figcaption>
+    </figure>
+    {{- end }}
     <p class="location__vango">{{ $p.location.vangoNote }} <a href="{{ site.Params.vangoUrl }}">Vango Imedemaa</a>.</p>
   </div>
 </section>

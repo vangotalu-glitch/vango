@@ -1,0 +1,2 @@
+{{- /* Vaikne, aeglustatud taustavideo. Kasutus: partial "video.html" (dict "src" "video/x.mp4" "poster" "video/x.jpg" "class" "…") */ -}}
+<video class="{{ .class }}" src="{{ .src | relURL }}"{{ with .poster }} poster="{{ . | relURL }}"{{ end }} autoplay muted loop playsinline preload="metadata" aria-hidden="true" data-video></video>

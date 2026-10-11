@@ -1,6 +1,6 @@
 ---
 title: "Your passage to Jäneseurg"
-description: "Book the entire Rabbit Hole Hotel — one private house for 1–2 guests, with sauna, lake and forest. Only one booking at a time."
+description: "Book the entire Rabbit Hole Hotel — one private earth house for 1–2 guests, with sauna, lake and forest. Only one booking at a time."
 layout: "book"
 slug: "book"
 kicker: "Book"
@@ -9,10 +9,12 @@ blocks:
   - title: "Not a room. A whole place."
     body: "When your dates are available, everything here belongs to you — the house, the sauna, the shore and the silence around them."
     list:
-      - "A private house for 1–2 guests"
+      - "A private earth house for 1–2 guests"
       - "Sauna"
       - "Lake access and SUP boards"
       - "Kitchen and outdoor terrace"
+      - "Wi-Fi throughout the house"
+      - "Bluetooth sound system throughout the house"
       - "Complete privacy — no shared spaces, no other guests"
   - title: "Before you book"
     body: "This place is intentionally quiet. There is no reception, no schedule, no one checking in on you. You arrive, you settle, you stay. If that feels right — you are in the right place."

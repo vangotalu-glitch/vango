@@ -25,6 +25,24 @@
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
 
+  // Videod: liikumist vältivatele kasutajatele peatatud; nupp peatamiseks/käivitamiseks
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-video]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); }
+  });
+  document.querySelectorAll('[data-video-toggle]').forEach(function (btn) {
+    var v = btn.parentNode.querySelector('video');
+    if (!v) return;
+    var sync = function () {
+      var paused = v.paused;
+      btn.classList.toggle('is-paused', paused);
+      btn.setAttribute('aria-label', paused ? btn.dataset.labelPlay : btn.dataset.labelPause);
+    };
+    btn.addEventListener('click', function () { if (v.paused) { v.play(); } else { v.pause(); } });
+    v.addEventListener('play', sync); v.addEventListener('pause', sync);
+    sync();
+  });
+
   // Aeglane ilmumine
   var items = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {

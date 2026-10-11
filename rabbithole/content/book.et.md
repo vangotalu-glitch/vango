@@ -1,6 +1,6 @@
 ---
 title: "Sinu teekond Jäneseurgu"
-description: "Broneeri kogu Rabbit Hole Hotel – privaatne maja 1–2 külalisele koos sauna, järve ja metsaga. Korraga ainult üks broneering."
+description: "Broneeri kogu Rabbit Hole Hotel – privaatne maa-alune maja 1–2 külalisele koos sauna, järve ja metsaga. Korraga ainult üks broneering."
 layout: "book"
 slug: "broneeri"
 kicker: "Broneeri"
@@ -9,10 +9,12 @@ blocks:
   - title: "Mitte tuba. Terve paik."
     body: "Kui sinu kuupäevad on vabad, kuulub siin kõik sulle – maja, saun, kallas ja vaikus nende ümber."
     list:
-      - "Privaatne maja 1–2 külalisele"
+      - "Privaatne maa-alune maja 1–2 külalisele"
       - "Saun"
       - "Ligipääs järvele ja SUP-lauad"
       - "Köök ja terrass"
+      - "WiFi kogu majas"
+      - "Bluetoothiga töötav helisüsteem kogu majas"
       - "Täielik privaatsus – ei jagatud ruume, ei teisi külalisi"
   - title: "Enne broneerimist"
     body: "See paik on teadlikult vaikne. Siin ei ole vastuvõttu, ajakava ega kedagi, kes sind kontrolliks. Sa saabud, sead end sisse ja jääd. Kui see tundub õige, oled õiges kohas."

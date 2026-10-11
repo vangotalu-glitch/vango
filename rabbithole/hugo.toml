@@ -32,10 +32,14 @@ disableKinds = ["taxonomy", "term", "RSS"]
     label = "DE"
     locale = "de"
     weight = 2
+    [languages.de.permalinks.page]
+      space = "/raum/:slug/"
   [languages.et]
     label = "ET"
     locale = "et"
     weight = 3
+    [languages.et.permalinks.page]
+      space = "/ruum/:slug/"
 
 [markup.goldmark.renderer]
   unsafe = true

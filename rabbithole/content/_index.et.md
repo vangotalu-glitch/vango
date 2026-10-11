@@ -1,21 +1,24 @@
 ---
 title: "Rabbit Hole Hotel · Jäneseurg"
-description: "Privaatne puhkepaik kahele metsa ja järve piiril Vangos, Pärnumaal. Korraga ainult üks broneering – saun, järv, mets ja vaikus on täielikult sinu päralt."
+description: "Privaatne maa-alune maja kahele metsa ja järve piiril Vangos, Pärnumaal. Korraga ainult üks broneering – saun, järv, mets ja vaikus on täielikult sinu päralt."
 
 hero:
   kicker: "Rabbit Hole Hotel · Jäneseurg"
-  title: "Astu Jänese urgu."
-  lead: "Privaatne maja metsa ja vee piiril. Korraga ainult üks külastus – ja see kuulub täielikult sulle."
+  lead: "Privaatne maa-alune maja metsa ja vee piiril. Üks paar korraga – kogu maja on ainult teie päralt."
   cta: "Vaata vabu aegu"
   secondary: "Astu sisse"
-  image: ""
+  image: "img/photos/hero.jpg"
+  video: "video/aerial.mp4"
+  poster: "video/aerial.jpg"
 
 place:
   id: "paik"
   label: "Paik"
   title: "See ei ole hotell tavamõttes."
   body: |
-    Üks maja. Korraga üks külastus.
+    Üks maa-alune maja. Korraga üks külastus.
+
+    Selle katus on osa künkast. Sees kaarduvad seinad nagu urus ja välismaailm vaibub vaikseks.
 
     Ei teisi külalisi. Ei vastuvõttu. Keegi ei kõnni sinu aknast mööda.
 
@@ -28,20 +31,23 @@ space:
   outro: "Võid süüa teha. Võid istuda vee ääres. Võid mitte midagi teha. Sellest piisab täiesti."
   items:
     - name: "Siseruum"
-      text: "Soe puit, pehme valgus ja tekstuurid, mis kutsuvad aeglustuma."
-      image: ""
+      text: "Kaarjad seinad, pehme valgus ja tekstuurid, mis kutsuvad aeglustuma."
+      image: "img/photos/interior.jpg"
+      page: "/space/interior"
     - name: "Saun"
       text: "Leil, mis päeva lahti sulatab. Aken puude vahele."
-      image: ""
+      image: "img/photos/sauna.jpg"
+      page: "/space/sauna"
     - name: "Köök"
       text: "Köök, kus süüa teha aeglaselt ja koos."
-      image: ""
+      image: "img/photos/kitchen.jpg"
+      page: "/space/kitchen"
     - name: "Terrass"
       text: "Lõke, õhtune õhk ja laud lageda taeva all."
-      image: ""
+      image: "img/photos/terrace.jpg"
     - name: "Järv"
       text: "Hommikune udu, jahe vesi ja kaldal ootav SUP-laud."
-      image: ""
+      image: "img/photos/lake.jpg"
 
 experience:
   id: "kogemus"
@@ -93,6 +99,8 @@ location:
 
     Siis rada, uks – ja võtmeauk.
   address: "Vango metsavahi koht, Laiksaare küla, Saarde vald, Pärnumaa"
+  video: "video/arrival.mp4"
+  poster: "video/arrival.jpg"
   mapLabel: "Ava kaardil"
   vangoNote: "Rabbit Hole Hotel on osa"
 

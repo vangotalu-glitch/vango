@@ -1,21 +1,24 @@
 ---
 title: "Rabbit Hole Hotel · Jäneseurg"
-description: "A private retreat for two at the edge of forest and lake in Vango, Estonia. One stay at a time — sauna, lake, forest and silence, entirely yours."
+description: "A private earth house for two at the edge of forest and lake in Vango, Estonia. One stay at a time — sauna, lake, forest and silence, entirely yours."
 
 hero:
   kicker: "Rabbit Hole Hotel · Jäneseurg"
-  title: "Step into the Rabbit's burrow."
-  lead: "A private house at the edge of forest and water. One stay at a time — entirely yours."
+  lead: "A private earth house at the edge of forest and water. One stay at a time — entirely yours."
   cta: "Check availability"
-  secondary: "Enter the burrow"
-  image: ""
+  secondary: "Enter the Rabbit Hole"
+  image: "img/photos/hero.jpg"
+  video: "video/aerial.mp4"
+  poster: "video/aerial.jpg"
 
 place:
   id: "place"
   label: "The Place"
   title: "Not a hotel in the usual sense."
   body: |
-    One house. One stay at a time.
+    One earth house. One stay at a time.
+
+    Its roof is part of the hillside. Inside, the walls curve like a burrow, and the world outside grows quiet.
 
     No other guests. No reception. No one passing by your window.
 
@@ -28,20 +31,23 @@ space:
   outro: "You can cook. You can sit by the water. You can do nothing at all. That is more than enough."
   items:
     - name: "The Interior"
-      text: "Warm wood, soft light, textures that ask you to slow down."
-      image: ""
+      text: "Curved walls, soft light and textures that ask you to slow down."
+      image: "img/photos/interior.jpg"
+      page: "/space/interior"
     - name: "The Sauna"
       text: "Heat that loosens the day. A window into the trees."
-      image: ""
+      image: "img/photos/sauna.jpg"
+      page: "/space/sauna"
     - name: "The Kitchen"
       text: "A kitchen to cook slowly, together."
-      image: ""
+      image: "img/photos/kitchen.jpg"
+      page: "/space/kitchen"
     - name: "The Terrace"
       text: "Fire, evening air and a table under the open sky."
-      image: ""
+      image: "img/photos/terrace.jpg"
     - name: "The Lake"
       text: "Morning mist, cold water and a paddleboard waiting at the shore."
-      image: ""
+      image: "img/photos/lake.jpg"
 
 experience:
   id: "experience"
@@ -93,6 +99,8 @@ location:
 
     Then a path, a door — and a keyhole.
   address: "Vango, Laiksaare village, Saarde parish, Pärnu County, Estonia"
+  video: "video/arrival.mp4"
+  poster: "video/arrival.jpg"
   mapLabel: "Open in maps"
   vangoNote: "Rabbit Hole Hotel is part of"
 

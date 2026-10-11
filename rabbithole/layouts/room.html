@@ -1,0 +1,52 @@
+{{ define "main" }}
+{{- $p := .Params }}
+{{- $book := site.GetPage "/book" }}
+{{- $rooms := (site.GetPage "/space").Pages.ByWeight }}
+{{- $next := "" }}
+{{- range $i, $r := $rooms }}{{ if eq $r $.Page }}{{ $next = index $rooms (mod (add $i 1) (len $rooms)) }}{{ end }}{{ end }}
+
+<article class="room">
+  <div class="room__media">
+    {{ partial "video.html" (dict "src" $p.video "poster" $p.poster "class" "room__video") }}
+    <button class="video-toggle" type="button" data-video-toggle data-label-pause="{{ i18n "pause" }}" data-label-play="{{ i18n "play" }}" aria-label="{{ i18n "pause" }}"><span></span></button>
+  </div>
+  <div class="room__text">
+    <a class="room__back" href="{{ site.Home.RelPermalink }}#{{ site.Home.Params.space.id }}">← {{ i18n "backHome" }}</a>
+    <p class="eyebrow">{{ $p.kicker }}</p>
+    <h1 class="room__title">{{ .Title }}</h1>
+    {{- with $p.subtitle }}<p class="room__subtitle">{{ . }}</p>{{ end }}
+    <p class="room__lead">{{ $p.lead }}</p>
+    {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+    {{- with $p.equipment }}
+    <section class="kit">
+      <h2 class="howto__title">{{ .title }}</h2>
+      <ul class="kit__list">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+    </section>
+    {{- end }}
+    {{- with $p.minibar }}<p class="kit__note">{{ . }}</p>{{ end }}
+    {{- with $p.guide }}
+    <aside class="howto">
+      <h2 class="howto__title">{{ .title }}</h2>
+      <p class="howto__intro">{{ .intro }}</p>
+      {{- range .groups }}
+      <div class="guide__group">
+        <h3 class="guide__name">{{ .name }}</h3>
+        <p class="guide__warn">{{ .note }}</p>
+        <dl class="guide__rows">{{ range .rows }}<div><dt>{{ index . 0 }}</dt><dd>{{ index . 1 }}</dd></div>{{ end }}</dl>
+      </div>
+      {{- end }}
+    </aside>
+    {{- end }}
+    {{- with $p.howto }}
+    <aside class="howto">
+      <h2 class="howto__title">{{ .title }}</h2>
+      <ol class="howto__steps">{{ range .steps }}<li>{{ . }}</li>{{ end }}</ol>
+    </aside>
+    {{- end }}
+    <div class="room__actions">
+      <a class="btn btn--gold" href="{{ $book.RelPermalink }}">{{ i18n "bookStay" }}</a>
+      {{- with $next }}<a class="link" href="{{ .RelPermalink }}">{{ i18n "nextRoom" }}: {{ .Title }} →</a>{{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}
