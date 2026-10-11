@@ -53,6 +53,8 @@ experience:
   label: "Kogemus"
   title: "Siin liigub aeg teisiti."
   intro: "Siin ei ole ajakava ega programmi, mida järgida. Midagi ei pea tegema – ja ometi juhtub tihti midagi."
+  image: "img/photos/window.jpg"
+  imageAlt: "Kaarjas aken metsa ja järve poole, selle all töölaud ja tool"
 
 voices: {"id": "voices", "label": "Külaliste sõnad", "source": "Booking.com", "trLabel": "Tõlge", "more": "Kõik arvustused Booking.com-is", "url": "https://www.booking.com/hotel/ee/rabbit-hole.html#tab-reviews", "items": [{"quote": "Great place, thoughtfully made and following a chosen concept, without compromise on the good quality of interior and materials. … Great host, wonderful nature around.", "lang": "en", "name": "Roman", "country": "Ukraina", "date": "märts 2026", "score": "10", "translation": "Suurepärane koht, läbimõeldult loodud ja valitud kontseptsioonile truu, tegemata järeleandmisi sisekujunduse ja materjalide kvaliteedis. … Suurepärane võõrustaja, imeline loodus ümberringi."}, {"quote": "Great place to relax. Has literally everything you can think of. The sauna is very nice. … Great getaway for a couple in a peaceful nature location.", "lang": "en", "name": "Carolin", "country": "Taani", "date": "juuli 2025", "score": "10", "translation": "Suurepärane koht lõõgastumiseks. Siin on sõna otseses mõttes kõik, mida osata tahta. Saun on väga mõnus. … Suurepärane põgenemine kahekesi rahulikus looduskeskkonnas."}, {"quote": "Väga kaunis ja vaikne koht. Majutus näeb värske välja ja on väga hubane.", "lang": "et", "name": "Timo", "country": "Eesti", "date": "märts 2025", "score": "10"}]}
 

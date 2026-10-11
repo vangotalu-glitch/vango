@@ -2,6 +2,21 @@
   var doc = document.documentElement;
   doc.classList.add('js');
 
+  // Uus leht avaneb alati ülevalt (v.a ankurlingid ja brauseri tagasi-nupp)
+  if (!location.hash) {
+    var navEntry = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+    if (!navEntry || navEntry.type !== 'back_forward') {
+      var toTop = function () {
+        doc.style.scrollBehavior = 'auto';
+        window.scrollTo(0, 0);
+        doc.style.scrollBehavior = '';
+      };
+      toTop();
+      window.addEventListener('DOMContentLoaded', toTop);
+      window.addEventListener('load', toTop);
+    }
+  }
+
   // Header taust kerimisel
   var header = document.querySelector('[data-header]');
   var onScroll = function () {

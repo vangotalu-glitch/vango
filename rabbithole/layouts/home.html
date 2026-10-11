@@ -60,10 +60,15 @@
 
 <section class="section experience" id="{{ $p.experience.id }}">
   <div class="wrap">
-    <div class="experience__intro reveal">
-      <p class="eyebrow"><span class="num">03</span> {{ $p.experience.label }}</p>
-      <h2 class="h2">{{ $p.experience.title }}</h2>
-      <p class="lead">{{ $p.experience.intro }}</p>
+    <div class="experience__grid{{ if $p.experience.image }} experience__grid--image{{ end }}">
+      <div class="experience__intro reveal">
+        <p class="eyebrow"><span class="num">03</span> {{ $p.experience.label }}</p>
+        <h2 class="h2">{{ $p.experience.title }}</h2>
+        <p class="lead">{{ $p.experience.intro }}</p>
+      </div>
+      {{- with $p.experience.image }}
+      <figure class="experience__image reveal"><img src="{{ . | relURL }}" alt="{{ $p.experience.imageAlt }}" width="1100" height="1467" loading="lazy" decoding="async"></figure>
+      {{- end }}
     </div>
     {{- with $p.experience.quote }}<blockquote class="quote reveal"><p>{{ . }}</p></blockquote>{{ end }}
     {{- with $p.experience.rituals }}

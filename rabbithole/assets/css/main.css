@@ -231,6 +231,10 @@ p { margin: 0 0 1.1em; }
 
 /* experience */
 .experience__intro { max-width: 44rem; }
+.experience__grid--image { display: grid; grid-template-columns: 1fr minmax(0, .8fr); gap: clamp(2.5rem, 7vw, 7rem); align-items: center; }
+.experience__image { margin: 0; overflow: hidden; border-radius: 999px 999px 0 0; }
+.experience__image img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
+@media (max-width: 860px) { .experience__grid--image { grid-template-columns: 1fr; } .experience__image { max-width: 26rem; } }
 .quote { margin: clamp(4rem, 9vw, 7rem) 0; padding: 0; text-align: center; }
 .quote p {
   font-family: var(--serif); font-weight: 300;
@@ -452,6 +456,7 @@ a.tile__media:hover .tile__play { border-color: var(--gold); background: rgba(19
 @media (max-width: 900px) { .voices__list { grid-template-columns: 1fr; } }
 .closing__body { color: var(--text-muted); max-width: 36em; margin: -1.2rem auto 2.6rem; text-wrap: pretty; }
 .closing__body p { margin: 0; }
+.closing__back { margin: 1.8rem 0 0; }
 .closing__body p + p { margin-top: 1em; }
 
 /* ---------- vihik / sisemine teekond ---------- */

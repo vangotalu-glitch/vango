@@ -65,6 +65,7 @@
       <h2 class="closing__title">{{ $p.note.title }}</h2>
       <div class="closing__body prose">{{ $p.note.body | markdownify }}</div>
       <a class="btn btn--gold" href="{{ $book.RelPermalink }}">{{ $p.cta }}</a>
+      <p class="closing__back"><a class="link" href="{{ site.Home.RelPermalink }}#{{ site.Home.Params.journey.id }}">← {{ $p.back }}</a></p>
       <p class="micro">{{ $p.credits }}</p>
     </div>
   </section>

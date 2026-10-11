@@ -53,6 +53,8 @@ experience:
   label: "The Experience"
   title: "Time stretches differently here."
   intro: "There is no schedule. No programme to follow. Nothing is required — but something often happens."
+  image: "img/photos/window.jpg"
+  imageAlt: "An arched window onto the forest and lake, with a desk and chair beneath it"
 
 voices: {"id": "voices", "label": "Guests' words", "source": "Booking.com", "trLabel": "Translation", "more": "All reviews on Booking.com", "url": "https://www.booking.com/hotel/ee/rabbit-hole.html#tab-reviews", "items": [{"quote": "Great place, thoughtfully made and following a chosen concept, without compromise on the good quality of interior and materials. … Great host, wonderful nature around.", "lang": "en", "name": "Roman", "country": "Ukraine", "date": "March 2026", "score": "10"}, {"quote": "Great place to relax. Has literally everything you can think of. The sauna is very nice. … Great getaway for a couple in a peaceful nature location.", "lang": "en", "name": "Carolin", "country": "Denmark", "date": "July 2025", "score": "10"}, {"quote": "Väga kaunis ja vaikne koht. Majutus näeb värske välja ja on väga hubane.", "lang": "et", "name": "Timo", "country": "Estonia", "date": "March 2025", "score": "10", "translation": "A very beautiful and quiet place. The accommodation looks fresh and is very cosy."}]}
 
