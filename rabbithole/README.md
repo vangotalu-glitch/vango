@@ -21,7 +21,7 @@ hugo --gc --minify # tootmise build → public/
 - **Broneerimislehe tekstid:** `content/book.en.md`, `book.de.md`, `book.et.md`.
 - **Menüü, jaluse jm väikesed tekstid:** `i18n/en.toml`, `de.toml`, `et.toml`.
 - **Kontakt, broneerimislink, hind, check-in/out:** `hugo.toml` → `[params]`.
-  - `bookingUrl`: Booking.com- või Freetobooki link. Kui väli on tühi, avab nupp e-kirja aadressile info@vango.ee.
+  - `bookingUrl`: broneerimislink. Keelepõhised lingid on `[languages.xx.params]` all (praegu Booking.com). Kui väli on tühi, avab nupp e-kirja aadressile info@vango.ee.
   - `checkIn`, `checkOut`, `priceFrom`, `minStay`: tühjad väljad broneerimislehel ei kuvata.
 - **Värvid ja kujundus:** `assets/css/main.css` (värvid on faili alguses, Stitchi projektist "Rabbit Hole Hotel web").
 
@@ -54,4 +54,4 @@ Rabbit Hole saab Cloudflare'is **eraldi Workeri** sama repo pealt:
    NB! Praegu suunab `rabbithole.vango.ee` Veebimajutusse (vana WordPressi leht). Custom domaini lisamine asendab selle kirje DNS-is uue saidiga, nii et tee seda alles siis, kui uus sait on valmis.
 6. Soovi korral: Vango Workeri seadetes *Build watch paths* → välista `rabbithole/*`, et Rabbit Hole'i muudatused Vango lehte uuesti ei ehitaks (ja vastupidi: Rabbit Hole'i Workeril lisa `rabbithole/*`).
 
-Fondid (Noto Serif, Manrope) on kaustas `static/fonts/`, mitte Google Fonts'ist. Saksamaa andmekaitsepraktikas on see oluline.
+Fondid (Jost pealkirjadele, Manrope tekstile, Noto Serif kaldkiri tsitaatidele) on kaustas `static/fonts/`, mitte Google Fonts'ist. Saksamaa andmekaitsepraktikas on see oluline.
