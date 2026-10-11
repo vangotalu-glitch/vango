@@ -74,11 +74,12 @@ luxury:
     - "For two people who want to be together, with nothing in between."
     - "For one, who needs space to hear their own thoughts again."
     - "For anyone who has been running like the March Hare for far too long."
+  credo: "Mending the world begins with yourself. When you change, the world around you changes too."
 
 location:
   id: "location"
   label: "Location"
-  title: "Jäneseurg is not a place you pass through. You arrive."
+  title: "Rabbit Hole is not a place you pass through. You arrive."
   body: |
     Deep in the forests of Pärnumaa, in south-west Estonia, the road narrows and the trees close in. The phone grows quiet.
 

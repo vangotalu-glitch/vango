@@ -74,6 +74,7 @@ luxury:
     - "Für zwei Menschen, die Zeit miteinander verbringen möchten – ohne etwas dazwischen."
     - "Für einen Menschen, der Raum braucht, um die eigenen Gedanken wieder zu hören."
     - "Für alle, die zu lange wie der Märzhase der Zeit hinterhergelaufen sind."
+  credo: "Die Welt zu verbessern beginnt bei Ihnen selbst. Wenn Sie sich verändern, verändert sich auch die Welt um Sie herum."
 
 location:
   id: "anreise"

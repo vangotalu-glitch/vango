@@ -134,6 +134,12 @@
       {{- range $p.luxury.points }}<li class="reveal">{{ . }}</li>{{ end }}
     </ul>
   </div>
+  {{- with $p.luxury.credo }}
+  <div class="wrap luxury__credo reveal">
+    <p>{{ replaceRE `\. ` ".<br>" . | safeHTML }}</p>
+    {{- with site.Params.hashtag }}<p class="luxury__tag">{{ . }}</p>{{ end }}
+  </div>
+  {{- end }}
 </section>
 
 <section class="section location" id="{{ $p.location.id }}">
@@ -169,7 +175,7 @@
   <div class="wrap wrap--narrow reveal">
     <span class="closing__mark" aria-hidden="true">{{ partial "svg-mark.html" . | safeHTML }}</span>
     <h2 class="closing__title">{{ $p.closing.title }}</h2>
-    {{- with $p.closing.body }}<p class="closing__body">{{ . }}</p>{{ end }}
+    {{- with $p.closing.body }}<div class="closing__body">{{ $.RenderString (dict "display" "block") . }}</div>{{ end }}
     <a class="btn btn--gold" href="{{ $book.RelPermalink }}">{{ $p.closing.cta }}</a>
     <p class="micro">{{ $p.closing.micro }}</p>
   </div>

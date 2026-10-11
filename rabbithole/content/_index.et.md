@@ -38,14 +38,14 @@ space:
       image: "img/photos/kitchen.jpg"
       page: "/space/kitchen"
     - name: "Saun"
-      text: "Leil, mis päeva lahti sulatab. Vaid mõne sammu kaugusel järvest."
+      text: "Soojus, milles päevapinged lahtuvad. Järv on vaid mõne sammu kaugusel."
       image: "img/photos/sauna.jpg"
       page: "/space/sauna"
     - name: "Terrass"
-      text: "Lõke, õhtune õhk ja laud lageda taeva all. Välikamin koos puudega ning Kamado grill koos sütega."
+      text: "Elav tuli, õhtune õhk ja eined taeva all. Terrassil ootavad puudega välikamin ning Kamado grill koos grillsöega."
       image: "img/photos/terrace.jpg"
     - name: "Järv"
-      text: "Hommikune udu, jahe vesi ja kaldal ootav SUP-laud."
+      text: "Hommikuudu vee kohal, jäälinnu terav vile ja karastav järvevesi. SUP-lauad ootavad paadisilla ääres."
       image: "img/photos/lake.jpg"
 
 experience:
@@ -59,8 +59,8 @@ voices: {"id": "voices", "label": "Külaliste sõnad", "source": "Booking.com", 
 journey:
   id: "sisemine-teekond"
   label: "Sisemine teekond"
-  title: "Mis juhtub vaikselt."
-  body: "Majas ootab sind illustreeritud vihik: metsakümbluse harjutused, kirjutatud Jänese häälel – kaardid kahele või ühele. Küsimused, mis midagi ei nõua.\n\nVõid selle avada. Võid jätta avamata. Mõni külaline teeb ühe harjutuse ja jääb sinnapaika. Mõni veedab sellega kogu teise päeva – metsas ja teineteisega.\n\nÕiget viisi ei ole."
+  title: "Mis sünnib vaikuses"
+  body: "Majas ootab sind illustreeritud vihik metsakümblusharjutustega. Jänese häälel kirja pandud kaardid on mõeldud kahele või ühele. Neil on küsimused, mis ei nõua sinult midagi.\n\nVõid vihiku avada või jätta avamata. Mõni külaline teeb ühe harjutuse ja sellega asi piirdub. Mõni veedab selle seltsis terve teise päeva – metsas, iseenda või teineteisega.\n\nÜht õiget viisi ei ole."
   more: "Avasta sisemine teekond"
   page: "/journey"
   image: "img/booklet/cover.jpg"
@@ -74,6 +74,7 @@ luxury:
     - "Kahele, kes tahavad olla koos – ilma et miski nende vahele jääks."
     - "Ühele, kes vajab ruumi, et oma mõtteid jälle kuulda."
     - "Kõigile, kes on liiga kaua ajaga võidu jooksnud nagu Märtsijänes."
+  credo: "Maailma parandamine algab iseendast. Kui sina muutud, muutub ka maailm sinu ümber."
 
 location:
   id: "asukoht"
@@ -83,15 +84,15 @@ location:
     Sügaval Pärnumaa metsades, Edela-Eestis, muutub tee kitsamaks ja puud tulevad lähemale. Telefon jääb vaikseks.
 
     Siis rada, uks – ja võtmeauk.
-  address: "Vango metsavahi koht, Laiksaare küla, Saarde vald, Pärnumaa"
+  address: "Vango metsavahikoht, Laiksaare küla, Saarde vald, Pärnumaa"
   video: "video/arrival.mp4"
   poster: "video/arrival.jpg"
   mapLabel: "Ava kaardil"
   vangoNote: "Rabbit Hole Hotel on osa"
 
 closing:
-  title: "Jää kaheks ööks. Teisel päeval see alles algab."
-  body: "Esimene õhtu on saabumiseks: saun, järv ja vaikus, mis tasapisi maha laskub. Teisel päeval on lõpuks aega – kõndida aeglaselt metsas metsakümbluse vaimus, järgida kahele mõeldud kirjutamiskutseid ja rääkida sellest, millele argielu harva ruumi jätab. Kinkige endale kaks ööd. Teie suhe on seda aega väärt."
+  title: "Jää kaheks ööks. Alles teisel päeval algab päriselt."
+  body: "Esimene õhtu on kohalejõudmiseks: saun, järv ja vaikus, mis tasapisi su ümber laskub. Teisel päeval on lõpuks aega – kõndida metsas aeglaselt ja tähelepanelikult, võtta ette kahele mõeldud kirjutamisharjutusi ning rääkida sellest, mille jaoks argipäevas harva ruumi jääb.\n\nKingi need kaks ööd endale ja oma kaaslasele. Teie suhe on seda aega väärt."
   cta: "Vaata vabu aegu"
   micro: "Sa ei pea midagi erilist ette valmistama. Tule lihtsalt sellisena, nagu oled."
 ---

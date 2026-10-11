@@ -4,6 +4,7 @@
     <div class="site-footer__brand">
       <span class="site-footer__mark">{{ partial "svg-mark.html" . | safeHTML }}</span>
       <p class="site-footer__line">{{ i18n "footerLine" }}</p>
+      {{- with site.Params.hashtag }}<p class="site-footer__tag">{{ . }}</p>{{ end }}
     </div>
     <div class="site-footer__col">
       <p class="eyebrow">{{ i18n "contact" }}</p>

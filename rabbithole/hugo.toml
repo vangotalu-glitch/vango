@@ -6,6 +6,8 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
+  # Jäneseuru allkiri – kuvatakse avalehe osas 05 ja jaluses.
+  hashtag = "#maailmaparanduskeskus"
   # Broneerimise link. Kui Booking.com / Freetobook link on olemas, pane see siia.
   # Tühja väärtuse korral viib nupp e-kirjale info@vango.ee.
   bookingUrl = ""

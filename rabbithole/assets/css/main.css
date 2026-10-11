@@ -281,6 +281,9 @@ p { margin: 0 0 1.1em; }
 .luxury__points { list-style: none; margin: 0; padding: 0; }
 .luxury__points li { font-family: var(--serif); font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem); line-height: 1.45; padding: 1.6rem 0 1.6rem 2.4rem; border-top: 1px solid rgba(198,163,106,.25); position: relative; }
 .luxury__points li::before { content: ""; position: absolute; left: 0; top: 2.35rem; width: 1.2rem; height: 1px; background: var(--gold); }
+.luxury__credo { margin-top: clamp(4rem, 9vw, 7rem); padding-top: clamp(2.5rem, 5vw, 3.5rem); border-top: 1px solid rgba(198,163,106,.25); text-align: center; }
+.luxury__credo p { margin: 0 auto; max-width: 30em; font-family: var(--quote); font-style: italic; font-weight: 300; font-size: clamp(1.25rem, 1.05rem + .9vw, 1.75rem); line-height: 1.5; text-wrap: balance; }
+.luxury__credo .luxury__tag { margin-top: 1.2rem; font-style: normal; font-family: var(--sans); font-size: .8rem; letter-spacing: .18em; color: var(--gold); }
 @media (max-width: 860px) { .luxury__grid { grid-template-columns: 1fr; } }
 
 /* location */
@@ -320,6 +323,7 @@ p { margin: 0 0 1.1em; }
 .site-footer__inner { max-width: 1280px; margin: 0 auto; padding: 0 var(--gutter); display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; }
 .site-footer__mark { display: block; width: 3rem; color: var(--gold); margin-bottom: 1.4rem; }
 .site-footer__line { color: var(--text-muted); max-width: 22em; font-family: var(--serif); }
+.site-footer__tag { color: var(--gold); font-size: .8rem; letter-spacing: .14em; margin-top: .6rem; }
 .site-footer .eyebrow { margin-bottom: 1rem; font-size: .65rem; }
 .site-footer a { color: var(--text-muted); text-decoration: none; transition: color .3s; }
 .site-footer a:hover { color: var(--gold); }
@@ -447,6 +451,8 @@ a.tile__media:hover .tile__play { border-color: var(--gold); background: rgba(19
 .voices__more { margin: 2rem 0 0; text-align: right; font-size: .85rem; }
 @media (max-width: 900px) { .voices__list { grid-template-columns: 1fr; } }
 .closing__body { color: var(--text-muted); max-width: 36em; margin: -1.2rem auto 2.6rem; text-wrap: pretty; }
+.closing__body p { margin: 0; }
+.closing__body p + p { margin-top: 1em; }
 
 /* ---------- vihik / sisemine teekond ---------- */
 .booklet { display: block; max-width: 22rem; margin: 0 auto; transform: rotate(-3deg); box-shadow: 0 30px 60px rgba(0,0,0,.5); transition: transform .8s var(--ease); }
