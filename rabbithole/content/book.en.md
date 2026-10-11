@@ -1,10 +1,13 @@
 ---
-title: "Your passage to Jäneseurg"
+title: "Your passage to the Rabbit Hole Hotel"
 description: "Book the entire Rabbit Hole Hotel — one private earth house for 1–2 guests, with sauna, lake and forest. Only one booking at a time."
 layout: "book"
 slug: "book"
 kicker: "Book"
 lead: "You are about to enter the burrow. One stay at a time. One space, fully yours."
+nights:
+  title: "Stay two nights."
+  body: "The first evening is for arriving. The second day is when it begins: slow walks in the forest, the exercises for two, and conversations everyday life rarely leaves room for."
 blocks:
   - title: "Not a room. A whole place."
     body: "When your dates are available, everything here belongs to you — the house, the sauna, the shore and the silence around them."

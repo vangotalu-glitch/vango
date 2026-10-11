@@ -315,6 +315,9 @@ p { margin: 0 0 1.1em; }
 .book__aside { position: sticky; top: 7rem; display: grid; gap: 1.5rem; }
 .card { background: var(--surface); padding: clamp(1.6rem, 3vw, 2.4rem); border-radius: .25rem 2rem .25rem .25rem; border: 1px solid rgba(63,63,64,.4); }
 .card--quiet { background: transparent; }
+.nights { max-width: 34rem; margin: 0 auto 2.4rem; padding: 1.4rem 1.6rem; border-top: 1px solid rgba(198,163,106,.35); border-bottom: 1px solid rgba(198,163,106,.35); }
+.nights p { margin: 0; color: var(--text-muted); text-wrap: pretty; }
+.nights .nights__title { font-family: var(--serif); font-weight: 300; font-size: clamp(1.3rem, 1.1rem + .8vw, 1.7rem); color: var(--gold); margin-bottom: .5rem; }
 .card p { color: var(--text-muted); }
 .facts { margin: 0 0 1.4rem; }
 .facts div { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid rgba(63,63,64,.6); }

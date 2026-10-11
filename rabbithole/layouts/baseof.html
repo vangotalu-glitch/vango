@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · Rabbit Hole Hotel{{ end }}</title>
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else if in .Title "Rabbit Hole Hotel" }}{{ .Title }}{{ else }}{{ .Title }} · Rabbit Hole Hotel{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Title }}{{ end }}">
   <meta name="theme-color" content="#0B0B0C">
   <script>document.documentElement.classList.add('js')</script>

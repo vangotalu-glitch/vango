@@ -1,10 +1,13 @@
 ---
-title: "Ihr Weg nach Jäneseurg"
+title: "Ihr Weg ins Rabbit Hole Hotel"
 description: "Buchen Sie das gesamte Rabbit Hole Hotel – ein privates Erdhaus für 1–2 Gäste mit Sauna, See und Wald. Immer nur eine Buchung."
 layout: "book"
 slug: "buchen"
 kicker: "Buchen"
 lead: "Sie sind dabei, den Bau zu betreten. Immer nur ein Aufenthalt. Ein Raum, ganz für Sie allein."
+nights:
+  title: "Bleiben Sie zwei Nächte."
+  body: "Der erste Abend gehört dem Ankommen. Am zweiten Tag beginnt es: langsame Wege durch den Wald, die Übungen zu zweit und Gespräche, für die im Alltag selten Raum bleibt."
 blocks:
   - title: "Kein Zimmer. Ein ganzer Ort."
     body: "Wenn Ihre Wunschdaten frei sind, gehört Ihnen hier alles – das Haus, die Sauna, das Ufer und die Stille ringsum."

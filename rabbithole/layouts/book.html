@@ -9,7 +9,13 @@
     <p class="eyebrow">{{ $p.kicker }}</p>
     <h1 class="hero__title">{{ .Title }}</h1>
     <p class="hero__lead">{{ $p.lead }}</p>
-    <a class="btn btn--gold" href="{{ $url }}"{{ if hasPrefix $url "http" }} rel="noopener"{{ end }}>{{ $p.final.cta }}</a>
+    {{- with $p.nights }}
+    <div class="nights">
+      <p class="nights__title">{{ .title }}</p>
+      <p>{{ .body }}</p>
+    </div>
+    {{- end }}
+    <a class="btn btn--gold" href="{{ $url }}"{{ if hasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>{{ $p.final.cta }}</a>
   </div>
 </section>
 
@@ -53,7 +59,7 @@
   <div class="wrap wrap--narrow reveal">
     <span class="closing__mark" aria-hidden="true">{{ partial "svg-mark.html" . | safeHTML }}</span>
     <h2 class="closing__title">{{ $p.final.title }}</h2>
-    <a class="btn btn--gold" href="{{ $url }}"{{ if hasPrefix $url "http" }} rel="noopener"{{ end }}>{{ $p.final.cta }}</a>
+    <a class="btn btn--gold" href="{{ $url }}"{{ if hasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>{{ $p.final.cta }}</a>
     <p class="micro">{{ $p.final.micro }}</p>
     <p class="micro">{{ $p.final.ask }} <a href="mailto:{{ $s.email }}">{{ $s.email }}</a></p>
   </div>

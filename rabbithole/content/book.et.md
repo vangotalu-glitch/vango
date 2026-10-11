@@ -5,6 +5,9 @@ layout: "book"
 slug: "broneeri"
 kicker: "Broneeri"
 lead: "Oled astumas urgu. Korraga üks külastus. Üks ruum, täielikult sinu."
+nights:
+  title: "Jää kaheks ööks."
+  body: "Esimene õhtu on kohalejõudmiseks. Teisel päeval algab päriselt: aeglased käigud metsas, kahele mõeldud harjutused ja jutud, mille jaoks argipäevas harva ruumi jääb."
 blocks:
   - title: "Mitte tuba. Terve paik."
     body: "Kui sinu kuupäevad on vabad, kuulub siin kõik sulle – maja, saun, kallas ja vaikus nende ümber."
