@@ -3,7 +3,7 @@ title: "Saun"
 slug: "saun"
 translationKey: "space-sauna"
 layout: "room"
-weight: 2
+weight: 3
 kicker: "Ruum"
 subtitle: "Saunatonttu – leil, mis juba ootab sind"
 description: "Rabbit Hole Hoteli privaatses saunas elab tõeline Saunatonttu – Soomes loodud eriline soojust salvestav keris, mille südames peitub ligi 100 kilogrammi kuumi kive."

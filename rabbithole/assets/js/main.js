@@ -25,21 +25,25 @@
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
 
-  // Videod: liikumist vältivatele kasutajatele peatatud; nupp peatamiseks/käivitamiseks
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Videod: vaiksed ja aeglased, mängivad iseenesest; igal videol on peatamise nupp
   document.querySelectorAll('[data-video]').forEach(function (v) {
-    if (reduce) { v.removeAttribute('autoplay'); v.pause(); }
+    v.muted = true;
+    v.setAttribute('muted', '');
+    var p = v.play();
+    if (p && p.catch) p.catch(function () { /* automaatne esitus keelatud: jääb poster, nupust saab käivitada */ });
   });
   document.querySelectorAll('[data-video-toggle]').forEach(function (btn) {
-    var v = btn.parentNode.querySelector('video');
+    var box = btn.closest('.hero, .room__media, .location__media') || btn.parentNode;
+    var v = box.querySelector('video');
     if (!v) return;
     var sync = function () {
       var paused = v.paused;
       btn.classList.toggle('is-paused', paused);
       btn.setAttribute('aria-label', paused ? btn.dataset.labelPlay : btn.dataset.labelPause);
     };
-    btn.addEventListener('click', function () { if (v.paused) { v.play(); } else { v.pause(); } });
-    v.addEventListener('play', sync); v.addEventListener('pause', sync);
+    btn.addEventListener('click', function () { if (v.paused) { v.muted = true; v.play(); } else { v.pause(); } });
+    v.addEventListener('play', sync); v.addEventListener('pause', sync); v.addEventListener('playing', sync);
+    setTimeout(sync, 1200);
     sync();
   });
 

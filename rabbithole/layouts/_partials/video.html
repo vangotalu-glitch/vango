@@ -1,2 +1,2 @@
-{{- /* Vaikne, aeglustatud taustavideo. Kasutus: partial "video.html" (dict "src" "video/x.mp4" "poster" "video/x.jpg" "class" "…") */ -}}
-<video class="{{ .class }}" src="{{ .src | relURL }}"{{ with .poster }} poster="{{ . | relURL }}"{{ end }} autoplay muted loop playsinline preload="metadata" aria-hidden="true" data-video></video>
+{{- /* Vaikne, aeglustatud video. Kasutus: partial "video.html" (dict "src" "video/x.mp4" "poster" "video/x.jpg" "class" "…") */ -}}
+<video class="{{ .class }}"{{ with .poster }} poster="{{ . | relURL }}"{{ end }} autoplay muted loop playsinline webkit-playsinline disablepictureinpicture preload="auto" aria-hidden="true" data-video><source src="{{ .src | relURL }}" type="video/mp4"></video>

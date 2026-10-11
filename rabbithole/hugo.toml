@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   email = "info@vango.ee"
   phone = "+372 516 3259"
   phoneAlt = "+372 506 3365"
-  instagram = "https://www.instagram.com/vangotalu/"
+  instagram = "https://www.instagram.com/rabbitholehotel"
   facebook = "https://www.facebook.com/vangoimedemaa"
   vangoUrl = "https://vango.ee"
   mapUrl = "https://www.google.com/maps?q=58.131389,24.7625"

@@ -20,7 +20,7 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="{{ "img/og.jpg" | absURL }}">
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
-  <link rel="preload" href="{{ "fonts/noto-serif-latin-wght-italic.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/jost-latin-wght-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ "fonts/manrope-latin-wght-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">

@@ -8,14 +8,14 @@
 <article class="room">
   <div class="room__media">
     {{ partial "video.html" (dict "src" $p.video "poster" $p.poster "class" "room__video") }}
-    <button class="video-toggle" type="button" data-video-toggle data-label-pause="{{ i18n "pause" }}" data-label-play="{{ i18n "play" }}" aria-label="{{ i18n "pause" }}"><span></span></button>
+    {{ partial "video-toggle.html" . }}
   </div>
   <div class="room__text">
     <a class="room__back" href="{{ site.Home.RelPermalink }}#{{ site.Home.Params.space.id }}">← {{ i18n "backHome" }}</a>
     <p class="eyebrow">{{ $p.kicker }}</p>
     <h1 class="room__title">{{ .Title }}</h1>
     {{- with $p.subtitle }}<p class="room__subtitle">{{ . }}</p>{{ end }}
-    <p class="room__lead">{{ $p.lead }}</p>
+    {{- with $p.lead }}<p class="room__lead">{{ . }}</p>{{ end }}
     {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
     {{- with $p.equipment }}
     <section class="kit">

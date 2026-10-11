@@ -3,7 +3,7 @@ title: "Die Sauna"
 slug: "sauna"
 translationKey: "space-sauna"
 layout: "room"
-weight: 2
+weight: 3
 kicker: "Der Raum"
 subtitle: "Saunatonttu – ein Aufguss, der schon auf Sie wartet"
 description: "In der privaten Sauna des Rabbit Hole Hotel wohnt ein echter Saunatonttu – ein besonderer, in Finnland entwickelter Wärmespeicherofen, in dessen Herz fast 100 Kilogramm heiße Steine ruhen."

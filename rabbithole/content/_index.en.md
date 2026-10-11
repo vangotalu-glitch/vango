@@ -28,22 +28,21 @@ space:
   id: "space"
   label: "The Space"
   title: "Everything is already here."
-  outro: "You can cook. You can sit by the water. You can do nothing at all. That is more than enough."
   items:
     - name: "The Interior"
       text: "Curved walls, soft light and textures that ask you to slow down."
       image: "img/photos/interior.jpg"
       page: "/space/interior"
-    - name: "The Sauna"
-      text: "Heat that loosens the day. A window into the trees."
-      image: "img/photos/sauna.jpg"
-      page: "/space/sauna"
     - name: "The Kitchen"
       text: "A kitchen to cook slowly, together."
       image: "img/photos/kitchen.jpg"
       page: "/space/kitchen"
+    - name: "The Sauna"
+      text: "Heat that loosens the day. Just a few steps from the lake."
+      image: "img/photos/sauna.jpg"
+      page: "/space/sauna"
     - name: "The Terrace"
-      text: "Fire, evening air and a table under the open sky."
+      text: "Fire, evening air and a table under the open sky. An outdoor fireplace with firewood, and a Kamado grill with charcoal."
       image: "img/photos/terrace.jpg"
     - name: "The Lake"
       text: "Morning mist, cold water and a paddleboard waiting at the shore."
@@ -54,31 +53,17 @@ experience:
   label: "The Experience"
   title: "Time stretches differently here."
   intro: "There is no schedule. No programme to follow. Nothing is required — but something often happens."
-  quote: "The sauna is hot. The lake is cold. The space between them — that is you."
-  rituals:
-    - name: "The Arrival"
-      text: "A candle is already lit. An envelope waits on the table. The key is yours now. Enter gently."
-    - name: "The Evening Sequence"
-      text: "Evenings unfold slowly, in an order that needs no explaining."
-      steps: ["Sauna", "A cool rinse", "Tea or wine", "The terrace", "Silence"]
-    - name: "The Lake Ritual"
-      text: "Glide out at dawn, while the lake still belongs to the mist. Swim, paddle, or simply watch the water settle."
-    - name: "Forest Bathing"
-      text: "Walk slowly. Stop often. Inspired by the Japanese practice of shinrin-yoku — the forest does the rest."
+
+voices: {"id": "voices", "label": "Guests' words", "source": "Booking.com", "trLabel": "Translation", "more": "All reviews on Booking.com", "url": "https://www.booking.com/hotel/ee/rabbit-hole.html#tab-reviews", "items": [{"quote": "Great place, thoughtfully made and following a chosen concept, without compromise on the good quality of interior and materials. … Great host, wonderful nature around.", "lang": "en", "name": "Roman", "country": "Ukraine", "date": "March 2026", "score": "10"}, {"quote": "Great place to relax. Has literally everything you can think of. The sauna is very nice. … Great getaway for a couple in a peaceful nature location.", "lang": "en", "name": "Carolin", "country": "Denmark", "date": "July 2025", "score": "10"}, {"quote": "Väga kaunis ja vaikne koht. Majutus näeb värske välja ja on väga hubane.", "lang": "et", "name": "Timo", "country": "Estonia", "date": "March 2025", "score": "10", "translation": "A very beautiful and quiet place. The accommodation looks fresh and is very cosy."}]}
 
 journey:
   id: "inner-journey"
   label: "The Inner Journey"
   title: "What happens quietly."
-  envelope: "For when the moment feels right."
-  body: |
-    Somewhere in the house, a few envelopes are waiting.
-
-    Inside are short texts, written in the Rabbit's voice — reflections for two, or for one. Questions without demands.
-
-    You may open them. You may not. Some guests read one and stop. Some take them home and return to them long after they leave.
-
-    There is no right way.
+  body: "In the house, an illustrated booklet is waiting: creative writing invitations for forest bathing, written in the Rabbit's voice – cards for two, or for one. Questions without demands.\n\nYou may open it. You may not. Some guests do one exercise and stop. Some spend the whole second day with it – in the forest, and with each other.\n\nThere is no right way."
+  more: "Discover the Inner Journey"
+  page: "/journey"
+  image: "img/booklet/cover.jpg"
 
 luxury:
   id: "for-whom"
@@ -105,7 +90,8 @@ location:
   vangoNote: "Rabbit Hole Hotel is part of"
 
 closing:
-  title: "Stay for a night. Or for something more difficult to name."
+  title: "Stay two nights. The second day is when it begins."
+  body: "The first evening is for arriving: the sauna, the lake, the quiet slowly settling in. On the second day there is finally time — to walk slowly through the forest in the spirit of shinrin-yoku, to follow the writing invitations for two, and to talk about what everyday life rarely leaves room for. Give yourselves two nights. Your relationship deserves the time."
   cta: "Check availability"
   micro: "You don't need to prepare anything special. Just arrive as you are."
 ---

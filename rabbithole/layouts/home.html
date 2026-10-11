@@ -19,6 +19,7 @@
       <a class="btn btn--line" href="#{{ $p.place.id }}">{{ $p.hero.secondary }}</a>
     </div>
   </div>
+  {{- if $p.hero.video }}<div class="hero__toggle">{{ partial "video-toggle.html" . }}</div>{{ end }}
   <a class="hero__scroll" href="#{{ $p.place.id }}" aria-label="{{ $p.hero.secondary }}"><span></span></a>
 </section>
 
@@ -53,7 +54,7 @@
       </li>
       {{- end }}
     </ul>
-    <p class="space__outro reveal">{{ $p.space.outro }}</p>
+    {{- with $p.space.outro }}<p class="space__outro reveal">{{ . }}</p>{{ end }}
   </div>
 </section>
 
@@ -64,38 +65,60 @@
       <h2 class="h2">{{ $p.experience.title }}</h2>
       <p class="lead">{{ $p.experience.intro }}</p>
     </div>
-    <blockquote class="quote reveal"><p>{{ $p.experience.quote }}</p></blockquote>
+    {{- with $p.experience.quote }}<blockquote class="quote reveal"><p>{{ . }}</p></blockquote>{{ end }}
+    {{- with $p.experience.rituals }}
     <ol class="rituals">
-      {{- range $i, $r := $p.experience.rituals }}
+      {{- range $i, $r := . }}
       <li class="ritual reveal">
         <span class="ritual__num">{{ printf "%02d" (add $i 1) }}</span>
         <div>
           <h3 class="ritual__name">{{ $r.name }}</h3>
           <p>{{ $r.text }}</p>
-          {{- with $r.steps }}
-          <ol class="sequence">
-            {{- range . }}<li>{{ . }}</li>{{ end }}
-          </ol>
-          {{- end }}
+          {{- with $r.steps }}<ol class="sequence">{{ range . }}<li>{{ . }}</li>{{ end }}</ol>{{ end }}
         </div>
       </li>
       {{- end }}
     </ol>
+    {{- end }}
   </div>
 </section>
 
+{{- with $p.voices }}
+<section class="section voices" id="{{ .id }}" aria-label="{{ .label }}">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ .label }}</p>
+    </div>
+    <ul class="voices__list">
+      {{- range .items }}
+      <li class="voice reveal">
+        <figure>
+          <blockquote lang="{{ .lang }}"><p>“{{ .quote }}”</p></blockquote>
+          {{- with .translation }}<p class="voice__tr"><span>{{ $.Params.voices.trLabel }}:</span> {{ . }}</p>{{ end }}
+          <figcaption>
+            <span class="voice__score" aria-label="{{ .score }}/10">{{ .score }}</span>
+            <span class="voice__who"><strong>{{ .name }}</strong> · {{ .country }}<br><span>{{ .date }} · {{ $.Params.voices.source }}</span></span>
+          </figcaption>
+        </figure>
+      </li>
+      {{- end }}
+    </ul>
+    <p class="voices__more reveal"><a class="link" href="{{ .url }}" rel="noopener">{{ .more }} →</a></p>
+  </div>
+</section>
+{{- end }}
+
 <section class="section journey" id="{{ $p.journey.id }}">
   <div class="wrap journey__grid">
-    <div class="envelope reveal" aria-hidden="true">
-      <div class="envelope__paper">
-        <span class="envelope__seal">{{ partial "svg-keyhole.html" . | safeHTML }}</span>
-        <span class="envelope__note">{{ $p.journey.envelope }}</span>
-      </div>
-    </div>
+    {{- $jp := "" }}{{ with $p.journey.page }}{{ $jp = site.GetPage . }}{{ end }}
+    <a class="booklet reveal" href="{{ with $jp }}{{ .RelPermalink }}{{ end }}" aria-label="{{ $p.journey.more }}">
+      <img src="{{ $p.journey.image | relURL }}" alt="" loading="lazy" decoding="async">
+    </a>
     <div class="reveal">
       <p class="eyebrow"><span class="num">04</span> {{ $p.journey.label }}</p>
       <h2 class="h2">{{ $p.journey.title }}</h2>
       <div class="prose">{{ $p.journey.body | markdownify }}</div>
+      {{- with $jp }}<p><a class="link" href="{{ .RelPermalink }}">{{ $p.journey.more }} →</a></p>{{ end }}
     </div>
   </div>
 </section>
@@ -123,12 +146,21 @@
       <p class="location__coords">N 58°07′53″ · E 24°45′45″</p>
       <a class="link" href="{{ site.Params.mapUrl }}" rel="noopener">{{ $p.location.mapLabel }}</a>
     </div>
-    {{- with $p.location.video }}
-    <figure class="location__video">
-      {{ partial "video.html" (dict "src" . "poster" $p.location.poster "class" "") }}
-      <figcaption>{{ i18n "wayIn" }}</figcaption>
-    </figure>
-    {{- end }}
+    <div class="location__visuals">
+      {{- with $p.location.video }}
+      <figure class="location__video">
+        <div class="location__media">
+          {{ partial "video.html" (dict "src" . "poster" $p.location.poster "class" "") }}
+          {{ partial "video-toggle.html" $ }}
+        </div>
+        <figcaption>{{ i18n "wayIn" }}</figcaption>
+      </figure>
+      {{- end }}
+      <figure class="location__map">
+        <a href="{{ site.Params.mapUrl }}" rel="noopener" aria-label="{{ $p.location.mapLabel }}">{{ partial "map.html" . | safeHTML }}</a>
+        <figcaption>{{ i18n "where" }} · <a class="link" href="{{ site.Params.mapUrl }}" rel="noopener">{{ $p.location.mapLabel }}</a></figcaption>
+      </figure>
+    </div>
     <p class="location__vango">{{ $p.location.vangoNote }} <a href="{{ site.Params.vangoUrl }}">Vango Imedemaa</a>.</p>
   </div>
 </section>
@@ -137,6 +169,7 @@
   <div class="wrap wrap--narrow reveal">
     <span class="closing__mark" aria-hidden="true">{{ partial "svg-mark.html" . | safeHTML }}</span>
     <h2 class="closing__title">{{ $p.closing.title }}</h2>
+    {{- with $p.closing.body }}<p class="closing__body">{{ . }}</p>{{ end }}
     <a class="btn btn--gold" href="{{ $book.RelPermalink }}">{{ $p.closing.cta }}</a>
     <p class="micro">{{ $p.closing.micro }}</p>
   </div>

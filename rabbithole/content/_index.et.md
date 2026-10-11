@@ -14,36 +14,35 @@ hero:
 place:
   id: "paik"
   label: "Paik"
-  title: "See ei ole hotell tavamõttes."
+  title: "See ei ole hotell tavapärases mõttes."
   body: |
-    Üks maa-alune maja. Korraga üks külastus.
+    See on üksainus maa-alune maja, mis on korraga ainult ühe külalise või paari päralt.
 
-    Selle katus on osa künkast. Sees kaarduvad seinad nagu urus ja välismaailm vaibub vaikseks.
+    Katus sulandub künkasse, seinad kaarduvad su ümber nagu turvalises urus ja välismaailma kära vaibub tasapisi.
 
-    Ei teisi külalisi. Ei vastuvõttu. Keegi ei kõnni sinu aknast mööda.
+    Siin ei ole teisi külalisi ega vastuvõtulauda. Keegi ei jaluta su akna tagant mööda.
 
-    Ainult mets, järv – ja teie kahekesi. Või ainult sina, kui just seda sul praegu vaja on.
+    On ainult mets, järv ja teie kaks. Või ainult sina, kui tunned, et just seda sul praegu vaja on.
 
 space:
   id: "ruum"
   label: "Ruum"
   title: "Kõik on juba olemas."
-  outro: "Võid süüa teha. Võid istuda vee ääres. Võid mitte midagi teha. Sellest piisab täiesti."
   items:
     - name: "Siseruum"
       text: "Kaarjad seinad, pehme valgus ja tekstuurid, mis kutsuvad aeglustuma."
       image: "img/photos/interior.jpg"
       page: "/space/interior"
-    - name: "Saun"
-      text: "Leil, mis päeva lahti sulatab. Aken puude vahele."
-      image: "img/photos/sauna.jpg"
-      page: "/space/sauna"
     - name: "Köök"
       text: "Köök, kus süüa teha aeglaselt ja koos."
       image: "img/photos/kitchen.jpg"
       page: "/space/kitchen"
+    - name: "Saun"
+      text: "Leil, mis päeva lahti sulatab. Vaid mõne sammu kaugusel järvest."
+      image: "img/photos/sauna.jpg"
+      page: "/space/sauna"
     - name: "Terrass"
-      text: "Lõke, õhtune õhk ja laud lageda taeva all."
+      text: "Lõke, õhtune õhk ja laud lageda taeva all. Välikamin koos puudega ning Kamado grill koos sütega."
       image: "img/photos/terrace.jpg"
     - name: "Järv"
       text: "Hommikune udu, jahe vesi ja kaldal ootav SUP-laud."
@@ -54,31 +53,17 @@ experience:
   label: "Kogemus"
   title: "Siin liigub aeg teisiti."
   intro: "Siin ei ole ajakava ega programmi, mida järgida. Midagi ei pea tegema – ja ometi juhtub tihti midagi."
-  quote: "Saun on kuum. Järv on külm. Vahe nende vahel – see oled sina."
-  rituals:
-    - name: "Saabumine"
-      text: "Küünal juba põleb. Laual ootab ümbrik. Võti on nüüd sinu. Astu sisse tasakesi."
-    - name: "Õhtune rituaal"
-      text: "Õhtud avanevad aeglaselt, järjekorras, mis ei vaja selgitamist."
-      steps: ["Saun", "Jahe dušš", "Tee või vein", "Terrass", "Vaikus"]
-    - name: "Järverituaal"
-      text: "Libise koidikul vee peale, kui järv kuulub veel udule. Uju, aeruta – või lihtsalt vaata, kuidas vesi rahuneb."
-    - name: "Metsakümblus"
-      text: "Kõnni aeglaselt. Peatu tihti. Jaapani shinrin-yoku vaimus – ülejäänu teeb mets ise."
+
+voices: {"id": "voices", "label": "Külaliste sõnad", "source": "Booking.com", "trLabel": "Tõlge", "more": "Kõik arvustused Booking.com-is", "url": "https://www.booking.com/hotel/ee/rabbit-hole.html#tab-reviews", "items": [{"quote": "Great place, thoughtfully made and following a chosen concept, without compromise on the good quality of interior and materials. … Great host, wonderful nature around.", "lang": "en", "name": "Roman", "country": "Ukraina", "date": "märts 2026", "score": "10", "translation": "Suurepärane koht, läbimõeldult loodud ja valitud kontseptsioonile truu, tegemata järeleandmisi sisekujunduse ja materjalide kvaliteedis. … Suurepärane võõrustaja, imeline loodus ümberringi."}, {"quote": "Great place to relax. Has literally everything you can think of. The sauna is very nice. … Great getaway for a couple in a peaceful nature location.", "lang": "en", "name": "Carolin", "country": "Taani", "date": "juuli 2025", "score": "10", "translation": "Suurepärane koht lõõgastumiseks. Siin on sõna otseses mõttes kõik, mida osata tahta. Saun on väga mõnus. … Suurepärane põgenemine kahekesi rahulikus looduskeskkonnas."}, {"quote": "Väga kaunis ja vaikne koht. Majutus näeb värske välja ja on väga hubane.", "lang": "et", "name": "Timo", "country": "Eesti", "date": "märts 2025", "score": "10"}]}
 
 journey:
   id: "sisemine-teekond"
   label: "Sisemine teekond"
   title: "Mis juhtub vaikselt."
-  envelope: "Siis, kui hetk tundub õige."
-  body: |
-    Kusagil majas ootavad mõned ümbrikud.
-
-    Nende sees on lühikesed tekstid, kirjutatud Jänese häälel – mõtisklused kahele või ühele. Küsimused, mis midagi ei nõua.
-
-    Võid need avada. Võid jätta avamata. Mõni külaline loeb ühe ja jääb sinnapaika. Mõni viib need koju kaasa ja pöördub nende juurde tagasi veel kaua pärast lahkumist.
-
-    Õiget viisi ei ole.
+  body: "Majas ootab sind illustreeritud vihik: metsakümbluse harjutused, kirjutatud Jänese häälel – kaardid kahele või ühele. Küsimused, mis midagi ei nõua.\n\nVõid selle avada. Võid jätta avamata. Mõni külaline teeb ühe harjutuse ja jääb sinnapaika. Mõni veedab sellega kogu teise päeva – metsas ja teineteisega.\n\nÕiget viisi ei ole."
+  more: "Avasta sisemine teekond"
+  page: "/journey"
+  image: "img/booklet/cover.jpg"
 
 luxury:
   id: "kellele"
@@ -105,7 +90,8 @@ location:
   vangoNote: "Rabbit Hole Hotel on osa"
 
 closing:
-  title: "Jää üheks ööks. Või millekski, mida on raskem nimetada."
+  title: "Jää kaheks ööks. Teisel päeval see alles algab."
+  body: "Esimene õhtu on saabumiseks: saun, järv ja vaikus, mis tasapisi maha laskub. Teisel päeval on lõpuks aega – kõndida aeglaselt metsas metsakümbluse vaimus, järgida kahele mõeldud kirjutamiskutseid ja rääkida sellest, millele argielu harva ruumi jätab. Kinkige endale kaks ööd. Teie suhe on seda aega väärt."
   cta: "Vaata vabu aegu"
   micro: "Sa ei pea midagi erilist ette valmistama. Tule lihtsalt sellisena, nagu oled."
 ---

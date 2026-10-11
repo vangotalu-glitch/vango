@@ -8,6 +8,6 @@ kicker: "Ruum"
 description: "Astu läbi vana puust ukse ja seinad hakkavad kaarduma. Kõik on käe-jala juures: koht magamiseks, koht söögitegemiseks ja aken, milles ootab järv."
 video: "video/interior.mp4"
 poster: "video/interior.jpg"
-equipment: {"title": "Kogu majas", "items": ["WiFi", "Bluetoothiga helisüsteem"]}
+equipment: {"title": "Kogu majas", "items": ["WiFi", "Bluetoothiga helisüsteem", "Hommikumantlid ja sussid"]}
 lead: "Astu läbi vana puust ukse ja seinad hakkavad kaarduma. Kõik on käe-jala juures: koht magamiseks, koht söögitegemiseks ja aken, milles ootab järv."
 ---

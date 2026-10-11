@@ -28,22 +28,21 @@ space:
   id: "raum"
   label: "Der Raum"
   title: "Alles ist schon da."
-  outro: "Sie können kochen. Sie können am Wasser sitzen. Sie können auch gar nichts tun. Das ist mehr als genug."
   items:
     - name: "Das Innere"
       text: "Gewölbte Wände, sanftes Licht und Texturen, die zum Langsamwerden einladen."
       image: "img/photos/interior.jpg"
       page: "/space/interior"
-    - name: "Die Sauna"
-      text: "Wärme, die den Tag löst. Ein Fenster in die Bäume."
-      image: "img/photos/sauna.jpg"
-      page: "/space/sauna"
     - name: "Die Küche"
       text: "Eine Küche, um langsam und gemeinsam zu kochen."
       image: "img/photos/kitchen.jpg"
       page: "/space/kitchen"
+    - name: "Die Sauna"
+      text: "Wärme, die den Tag löst. Nur wenige Schritte vom See entfernt."
+      image: "img/photos/sauna.jpg"
+      page: "/space/sauna"
     - name: "Die Terrasse"
-      text: "Feuer, Abendluft und ein Tisch unter freiem Himmel."
+      text: "Feuer, Abendluft und ein Tisch unter freiem Himmel. Ein Außenkamin mit Brennholz und ein Kamado-Grill mit Holzkohle."
       image: "img/photos/terrace.jpg"
     - name: "Der See"
       text: "Morgennebel, kühles Wasser und ein SUP-Board, das am Ufer wartet."
@@ -54,31 +53,17 @@ experience:
   label: "Erleben"
   title: "Hier vergeht die Zeit anders."
   intro: "Es gibt keinen Zeitplan. Kein Programm, dem Sie folgen müssen. Nichts ist nötig – und doch geschieht oft etwas."
-  quote: "Die Sauna ist heiß. Der See ist kalt. Der Raum dazwischen – das sind Sie."
-  rituals:
-    - name: "Die Ankunft"
-      text: "Eine Kerze brennt bereits. Ein Umschlag liegt auf dem Tisch. Der Schlüssel gehört jetzt Ihnen. Treten Sie behutsam ein."
-    - name: "Die Abendfolge"
-      text: "Die Abende entfalten sich langsam, in einer Reihenfolge, die keiner Erklärung bedarf."
-      steps: ["Sauna", "Eine kühle Dusche", "Tee oder Wein", "Die Terrasse", "Stille"]
-    - name: "Das Seeritual"
-      text: "Gleiten Sie im Morgengrauen hinaus, solange der See noch dem Nebel gehört. Schwimmen, paddeln – oder einfach zusehen, wie das Wasser zur Ruhe kommt."
-    - name: "Waldbaden"
-      text: "Langsam gehen. Oft stehen bleiben. Inspiriert vom japanischen Shinrin-yoku – den Rest übernimmt der Wald."
+
+voices: {"id": "voices", "label": "Stimmen unserer Gäste", "source": "Booking.com", "trLabel": "Übersetzung", "more": "Alle Bewertungen auf Booking.com", "url": "https://www.booking.com/hotel/ee/rabbit-hole.html#tab-reviews", "items": [{"quote": "Great place, thoughtfully made and following a chosen concept, without compromise on the good quality of interior and materials. … Great host, wonderful nature around.", "lang": "en", "name": "Roman", "country": "Ukraine", "date": "März 2026", "score": "10", "translation": "Ein großartiger Ort, durchdacht gestaltet und einem klaren Konzept folgend, ohne Kompromisse bei der Qualität von Einrichtung und Materialien. … Toller Gastgeber, wunderbare Natur ringsum."}, {"quote": "Great place to relax. Has literally everything you can think of. The sauna is very nice. … Great getaway for a couple in a peaceful nature location.", "lang": "en", "name": "Carolin", "country": "Dänemark", "date": "Juli 2025", "score": "10", "translation": "Ein großartiger Ort zum Entspannen. Hier gibt es buchstäblich alles, was man sich vorstellen kann. Die Sauna ist sehr schön. … Eine großartige Auszeit zu zweit an einem friedlichen Ort in der Natur."}, {"quote": "Väga kaunis ja vaikne koht. Majutus näeb värske välja ja on väga hubane.", "lang": "et", "name": "Timo", "country": "Estland", "date": "März 2025", "score": "10", "translation": "Ein sehr schöner und ruhiger Ort. Die Unterkunft wirkt frisch und ist sehr gemütlich."}]}
 
 journey:
   id: "innere-reise"
   label: "Die innere Reise"
   title: "Was leise geschieht."
-  envelope: "Für den Moment, der sich richtig anfühlt."
-  body: |
-    Irgendwo im Haus warten ein paar Umschläge.
-
-    Darin liegen kurze Texte, geschrieben mit der Stimme des Hasen – Gedanken für zwei oder für einen. Fragen ohne Erwartungen.
-
-    Sie können sie öffnen. Oder auch nicht. Manche Gäste lesen einen und hören dann auf. Manche nehmen sie mit nach Hause und kehren noch lange danach zu ihnen zurück.
-
-    Es gibt keinen richtigen Weg.
+  body: "Im Haus wartet ein illustriertes Heft: kreative Schreibeinladungen zum Waldbaden, geschrieben mit der Stimme des Hasen – Karten für zwei oder für einen. Fragen ohne Erwartungen.\n\nSie können es öffnen. Oder auch nicht. Manche Gäste machen eine Übung und hören dann auf. Manche verbringen den ganzen zweiten Tag damit – im Wald und miteinander.\n\nEs gibt keinen richtigen Weg."
+  more: "Die innere Reise entdecken"
+  page: "/journey"
+  image: "img/booklet/cover.jpg"
 
 luxury:
   id: "fuer-wen"
@@ -93,7 +78,7 @@ luxury:
 location:
   id: "anreise"
   label: "Anreise"
-  title: "Jäneseurg ist kein Ort, an dem man vorbeikommt. Man kommt an."
+  title: "Rabbit Hole ist kein Ort, an dem man vorbeikommt. Man kommt an."
   body: |
     Tief in den Wäldern von Pärnumaa, im Südwesten Estlands, wird die Straße schmaler und die Bäume rücken näher. Das Telefon wird still.
 
@@ -105,7 +90,8 @@ location:
   vangoNote: "Rabbit Hole Hotel ist Teil von"
 
 closing:
-  title: "Bleiben Sie für eine Nacht. Oder für etwas, das sich schwerer benennen lässt."
+  title: "Bleiben Sie zwei Nächte. Am zweiten Tag beginnt es."
+  body: "Der erste Abend gehört dem Ankommen: Sauna, See und die Stille, die sich langsam legt. Am zweiten Tag ist endlich Zeit – für ein langsames Waldbaden im Sinne von Shinrin-yoku, für die Schreibeinladungen zu zweit, und für Gespräche, für die im Alltag selten Raum bleibt. Schenken Sie sich zwei Nächte. Ihre Beziehung ist diese Zeit wert."
   cta: "Verfügbarkeit prüfen"
   micro: "Sie müssen nichts Besonderes vorbereiten. Kommen Sie einfach so, wie Sie sind."
 ---

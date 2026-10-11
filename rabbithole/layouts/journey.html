@@ -1,0 +1,72 @@
+{{ define "main" }}
+{{- $p := .Params }}
+{{- $book := site.GetPage "/book" }}
+<article class="jr">
+  <header class="jr__hero">
+    <div class="wrap jr__hero-grid">
+      <div>
+        <a class="room__back" href="{{ site.Home.RelPermalink }}#{{ site.Home.Params.journey.id }}">← {{ $p.back }}</a>
+        <p class="eyebrow">{{ $p.kicker }}</p>
+        <h1 class="room__title">{{ .Title }}</h1>
+        <p class="room__subtitle">{{ $p.subtitle }}</p>
+        <blockquote class="jr__letter"><p>{{ $p.lead }}</p><footer>{{ $p.sign }}</footer></blockquote>
+      </div>
+      <figure class="jr__cover">
+        <img src="{{ "img/booklet/cover.jpg" | relURL }}" alt="{{ $p.imgAlt.cover }}" fetchpriority="high">
+      </figure>
+    </div>
+  </header>
+
+  <section class="section jr__intro">
+    <div class="wrap jr__cols">
+      <div class="reveal">
+        <h2 class="h3">{{ $p.what.title }}</h2>
+        <div class="prose">{{ $p.what.body | markdownify }}</div>
+      </div>
+      <div class="reveal">
+        <h2 class="h3">{{ $p.forest.title }}</h2>
+        <div class="prose">{{ $p.forest.body | markdownify }}</div>
+      </div>
+    </div>
+  </section>
+
+  {{- range $k, $g := slice (dict "data" $p.couples "img" "img/booklet/couples.jpg" "alt" $p.imgAlt.couples "cls" "jr__set--two") (dict "data" $p.solo "img" "img/booklet/solo.jpg" "alt" $p.imgAlt.solo "cls" "jr__set--one") }}
+  <section class="section jr__set {{ $g.cls }}">
+    <div class="wrap jr__set-grid">
+      <figure class="jr__page reveal"><img src="{{ $g.img | relURL }}" alt="{{ $g.alt }}" loading="lazy" decoding="async"></figure>
+      <div>
+        <div class="reveal">
+          <p class="eyebrow">{{ $g.data.title }}</p>
+          <p class="lead">{{ $g.data.intro }}</p>
+        </div>
+        <ol class="jr__cards">
+          {{- range $i, $c := $g.data.cards }}
+          <li class="reveal"><span class="jr__n">{{ printf "%02d" (add $i 1) }}</span><div><h3>{{ index $c 0 }}</h3><p>{{ index $c 1 }}</p></div></li>
+          {{- end }}
+        </ol>
+      </div>
+    </div>
+  </section>
+  {{- end }}
+
+  <section class="section jr__try">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow reveal">{{ $p.tryit.title }}</p>
+      <p class="lead reveal">{{ $p.tryit.intro }}</p>
+      {{- range $p.tryit.items }}
+      <div class="howto reveal"><h2 class="guide__name">{{ index . 0 }}</h2><div class="howto__intro prose">{{ index . 1 | markdownify }}</div></div>
+      {{- end }}
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap wrap--narrow reveal">
+      <span class="closing__mark" aria-hidden="true">{{ partial "svg-mark.html" . | safeHTML }}</span>
+      <h2 class="closing__title">{{ $p.note.title }}</h2>
+      <div class="closing__body prose">{{ $p.note.body | markdownify }}</div>
+      <a class="btn btn--gold" href="{{ $book.RelPermalink }}">{{ $p.cta }}</a>
+      <p class="micro">{{ $p.credits }}</p>
+    </div>
+  </section>
+</article>
+{{ end }}

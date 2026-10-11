@@ -3,7 +3,7 @@ title: "The Sauna"
 slug: "sauna"
 translationKey: "space-sauna"
 layout: "room"
-weight: 2
+weight: 3
 kicker: "The Space"
 subtitle: "Saunatonttu – steam that is already waiting for you"
 description: "In the private sauna of Rabbit Hole Hotel lives a true Saunatonttu – a special heat-storing sauna heater made in Finland, with nearly 100 kilograms of hot stones at its heart."
