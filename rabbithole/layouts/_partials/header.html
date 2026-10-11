@@ -1,0 +1,32 @@
+{{- $home := site.Home }}
+{{- $hp := $home.Params }}
+{{- $book := site.GetPage "/book" }}
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a class="brand" href="{{ $home.RelPermalink }}" aria-label="Rabbit Hole Hotel · Jäneseurg">
+      <span class="brand__mark">{{ partial "svg-keyhole.html" . | safeHTML }}</span>
+      <span class="brand__text">
+        <span class="brand__name">Rabbit Hole Hotel</span>
+        <span class="brand__sub">Jäneseurg</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="{{ i18n "menu" }}" data-nav>
+      <ul class="nav__list">
+        {{- range slice $hp.place $hp.experience $hp.journey $hp.location }}
+        <li><a href="{{ if not $.IsHome }}{{ $home.RelPermalink }}{{ end }}#{{ .id }}">{{ .label }}</a></li>
+        {{- end }}
+      </ul>
+      <ul class="lang" aria-label="Language">
+        {{- range .AllTranslations }}
+          <li><a href="{{ .RelPermalink }}" hreflang="{{ .Language.Locale }}" lang="{{ .Language.Locale }}"{{ if eq .Language.Name site.Language.Name }} aria-current="true"{{ end }}>{{ .Language.Label }}</a></li>
+        {{- end }}
+      </ul>
+      <a class="btn btn--gold nav__book" href="{{ with $book }}{{ .RelPermalink }}{{ end }}">{{ i18n "bookStay" }}</a>
+    </nav>
+    <a class="btn btn--gold btn--small" href="{{ with $book }}{{ .RelPermalink }}{{ end }}">{{ i18n "book" }}</a>
+    <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" data-nav-toggle>
+      <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+      <span class="sr">{{ i18n "menu" }}</span>
+    </button>
+  </div>
+</header>

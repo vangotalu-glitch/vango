@@ -1,0 +1,24 @@
+{{- $tel := replaceRE "[^+0-9]" "" site.Params.phone }}
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <span class="site-footer__mark">{{ partial "svg-mark.html" . | safeHTML }}</span>
+      <p class="site-footer__line">{{ i18n "footerLine" }}</p>
+    </div>
+    <div class="site-footer__col">
+      <p class="eyebrow">{{ i18n "contact" }}</p>
+      <p><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a><br>
+      <a href="tel:{{ $tel }}">{{ site.Params.phone }}</a></p>
+    </div>
+    <div class="site-footer__col">
+      <p class="eyebrow">{{ i18n "followUs" }}</p>
+      <p><a href="{{ site.Params.instagram }}" rel="noopener">Instagram</a><br>
+      <a href="{{ site.Params.facebook }}" rel="noopener">Facebook</a></p>
+    </div>
+    <div class="site-footer__col">
+      <p class="eyebrow">Vango Imedemaa</p>
+      <p><a href="{{ site.Params.vangoUrl }}">vango.ee</a></p>
+    </div>
+  </div>
+  <p class="site-footer__legal">© {{ now.Year }} Rabbit Hole Hotel · Vango Jäneseurg</p>
+</footer>

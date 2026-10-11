@@ -1,0 +1,44 @@
+baseURL = "https://rabbithole.vango.ee/"
+title = "Rabbit Hole Hotel · Jäneseurg"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  # Broneerimise link. Kui Booking.com / Freetobook link on olemas, pane see siia.
+  # Tühja väärtuse korral viib nupp e-kirjale info@vango.ee.
+  bookingUrl = ""
+  email = "info@vango.ee"
+  phone = "+372 516 3259"
+  phoneAlt = "+372 506 3365"
+  instagram = "https://www.instagram.com/vangotalu/"
+  facebook = "https://www.facebook.com/vangoimedemaa"
+  vangoUrl = "https://vango.ee"
+  mapUrl = "https://www.google.com/maps?q=58.131389,24.7625"
+
+  # Praktiline info broneerimislehel. Tühjad väljad jäetakse lehelt välja.
+  checkIn = ""
+  checkOut = ""
+  priceFrom = ""
+  minStay = ""
+
+[languages]
+  [languages.en]
+    label = "EN"
+    locale = "en"
+    weight = 1
+  [languages.de]
+    label = "DE"
+    locale = "de"
+    weight = 2
+  [languages.et]
+    label = "ET"
+    locale = "et"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[minify]
+  minifyOutput = true

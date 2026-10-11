@@ -1,0 +1,132 @@
+{{ define "main" }}
+{{- $p := .Params }}
+{{- $book := site.GetPage "/book" }}
+
+<section class="hero" aria-labelledby="hero-title">
+  {{- with $p.hero.image }}
+  <div class="hero__image" style="background-image:url('{{ . | relURL }}')"></div>
+  {{- end }}
+  <div class="hero__mist" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <span class="hero__mark" aria-hidden="true">{{ partial "svg-keyhole.html" . | safeHTML }}</span>
+    <p class="eyebrow">{{ $p.hero.kicker }}</p>
+    <h1 id="hero-title" class="hero__title">{{ $p.hero.title }}</h1>
+    <p class="hero__lead">{{ $p.hero.lead }}</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="{{ $book.RelPermalink }}">{{ $p.hero.cta }}</a>
+      <a class="btn btn--line" href="#{{ $p.place.id }}">{{ $p.hero.secondary }}</a>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#{{ $p.place.id }}" aria-label="{{ $p.hero.secondary }}"><span></span></a>
+</section>
+
+<section class="section place" id="{{ $p.place.id }}">
+  <div class="wrap wrap--narrow reveal">
+    <p class="eyebrow"><span class="num">01</span> {{ $p.place.label }}</p>
+    <h2 class="h2">{{ $p.place.title }}</h2>
+    <div class="prose prose--lines">{{ $p.place.body | markdownify }}</div>
+  </div>
+</section>
+
+<section class="section space" id="{{ $p.space.id }}">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow"><span class="num">02</span> {{ $p.space.label }}</p>
+      <h2 class="h2">{{ $p.space.title }}</h2>
+    </div>
+    <ul class="space__grid">
+      {{- range $i, $it := $p.space.items }}
+      <li class="tile reveal{{ if eq (mod $i 2) 1 }} tile--alt{{ end }}">
+        <div class="tile__media{{ if not $it.image }} tile__media--empty{{ end }}"{{ with $it.image }} style="background-image:url('{{ . | relURL }}')"{{ end }}>
+          {{- if not $it.image }}<span class="tile__glyph" aria-hidden="true">{{ partial "svg-keyhole.html" . | safeHTML }}</span>{{ end }}
+        </div>
+        <div class="tile__body">
+          <h3 class="tile__name">{{ $it.name }}</h3>
+          <p>{{ $it.text }}</p>
+        </div>
+      </li>
+      {{- end }}
+    </ul>
+    <p class="space__outro reveal">{{ $p.space.outro }}</p>
+  </div>
+</section>
+
+<section class="section experience" id="{{ $p.experience.id }}">
+  <div class="wrap">
+    <div class="experience__intro reveal">
+      <p class="eyebrow"><span class="num">03</span> {{ $p.experience.label }}</p>
+      <h2 class="h2">{{ $p.experience.title }}</h2>
+      <p class="lead">{{ $p.experience.intro }}</p>
+    </div>
+    <blockquote class="quote reveal"><p>{{ $p.experience.quote }}</p></blockquote>
+    <ol class="rituals">
+      {{- range $i, $r := $p.experience.rituals }}
+      <li class="ritual reveal">
+        <span class="ritual__num">{{ printf "%02d" (add $i 1) }}</span>
+        <div>
+          <h3 class="ritual__name">{{ $r.name }}</h3>
+          <p>{{ $r.text }}</p>
+          {{- with $r.steps }}
+          <ol class="sequence">
+            {{- range . }}<li>{{ . }}</li>{{ end }}
+          </ol>
+          {{- end }}
+        </div>
+      </li>
+      {{- end }}
+    </ol>
+  </div>
+</section>
+
+<section class="section journey" id="{{ $p.journey.id }}">
+  <div class="wrap journey__grid">
+    <div class="envelope reveal" aria-hidden="true">
+      <div class="envelope__paper">
+        <span class="envelope__seal">{{ partial "svg-keyhole.html" . | safeHTML }}</span>
+        <span class="envelope__note">{{ $p.journey.envelope }}</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow"><span class="num">04</span> {{ $p.journey.label }}</p>
+      <h2 class="h2">{{ $p.journey.title }}</h2>
+      <div class="prose">{{ $p.journey.body | markdownify }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section luxury" id="{{ $p.luxury.id }}">
+  <div class="wrap luxury__grid">
+    <div class="reveal">
+      <p class="eyebrow"><span class="num">05</span> {{ $p.luxury.label }}</p>
+      <h2 class="h2">{{ $p.luxury.title }}</h2>
+      <p class="lead">{{ $p.luxury.body }}</p>
+    </div>
+    <ul class="luxury__points">
+      {{- range $p.luxury.points }}<li class="reveal">{{ . }}</li>{{ end }}
+    </ul>
+  </div>
+</section>
+
+<section class="section location" id="{{ $p.location.id }}">
+  <div class="wrap wrap--narrow reveal">
+    <p class="eyebrow"><span class="num">06</span> {{ $p.location.label }}</p>
+    <h2 class="h2">{{ $p.location.title }}</h2>
+    <div class="prose prose--lines">{{ $p.location.body | markdownify }}</div>
+    <div class="location__meta">
+      <p class="location__address">{{ $p.location.address }}</p>
+      <p class="location__coords">N 58°07′53″ · E 24°45′45″</p>
+      <a class="link" href="{{ site.Params.mapUrl }}" rel="noopener">{{ $p.location.mapLabel }}</a>
+    </div>
+    <p class="location__vango">{{ $p.location.vangoNote }} <a href="{{ site.Params.vangoUrl }}">Vango Imedemaa</a>.</p>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap wrap--narrow reveal">
+    <span class="closing__mark" aria-hidden="true">{{ partial "svg-mark.html" . | safeHTML }}</span>
+    <h2 class="closing__title">{{ $p.closing.title }}</h2>
+    <a class="btn btn--gold" href="{{ $book.RelPermalink }}">{{ $p.closing.cta }}</a>
+    <p class="micro">{{ $p.closing.micro }}</p>
+  </div>
+</section>
+{{ end }}

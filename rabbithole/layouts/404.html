@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="page-hero page-hero--full">
+  <div class="wrap wrap--narrow">
+    <span class="hero__mark" aria-hidden="true">{{ partial "svg-keyhole.html" . | safeHTML }}</span>
+    <h1 class="hero__title">{{ i18n "notFoundTitle" }}</h1>
+    <p class="hero__lead">{{ i18n "notFoundText" }}</p>
+    <a class="btn btn--line" href="{{ site.Home.RelPermalink }}">{{ i18n "backHome" }}</a>
+  </div>
+</section>
+{{ end }}

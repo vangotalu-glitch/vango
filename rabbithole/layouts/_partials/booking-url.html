@@ -1,0 +1,5 @@
+{{- $url := site.Params.bookingUrl -}}
+{{- if not $url -}}
+  {{- $url = printf "mailto:%s?subject=%s" site.Params.email "Rabbit%20Hole%20Hotel" -}}
+{{- end -}}
+{{- return $url -}}

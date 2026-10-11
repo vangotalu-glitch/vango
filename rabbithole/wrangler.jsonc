@@ -1,0 +1,12 @@
+{
+  // Rabbit Hole Hotel (rabbithole.vango.ee): eraldi Cloudflare Worker sama repo
+  // alamkaustast "rabbithole". Cloudflare'i projektis: Root directory = rabbithole,
+  // build command = `hugo --gc --minify` (HUGO_VERSION = 0.165.0), deploy = `npx wrangler deploy`.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rabbithole",
+  "compatibility_date": "2026-08-31",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}

@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{- $p := .Params }}
+{{- $url := partial "booking-url.html" . }}
+{{- $s := site.Params }}
+
+<section class="page-hero">
+  <div class="wrap wrap--narrow">
+    <span class="hero__mark hero__mark--small" aria-hidden="true">{{ partial "svg-keyhole.html" . | safeHTML }}</span>
+    <p class="eyebrow">{{ $p.kicker }}</p>
+    <h1 class="hero__title">{{ .Title }}</h1>
+    <p class="hero__lead">{{ $p.lead }}</p>
+    <a class="btn btn--gold" href="{{ $url }}"{{ if hasPrefix $url "http" }} rel="noopener"{{ end }}>{{ $p.final.cta }}</a>
+  </div>
+</section>
+
+<section class="section book">
+  <div class="wrap book__grid">
+    <div class="book__blocks">
+      {{- range $i, $b := $p.blocks }}
+      <article class="book__block reveal">
+        <p class="eyebrow"><span class="num">{{ printf "%02d" (add $i 1) }}</span></p>
+        <h2 class="h3">{{ $b.title }}</h2>
+        <p>{{ $b.body }}</p>
+        {{- with $b.list }}
+        <ul class="ticks">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+        {{- end }}
+      </article>
+      {{- end }}
+    </div>
+
+    <aside class="book__aside reveal">
+      <div class="card">
+        <h2 class="h3">{{ $p.details.title }}</h2>
+        <dl class="facts">
+          {{- with $s.checkIn }}<div><dt>{{ $p.details.checkIn }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with $s.checkOut }}<div><dt>{{ $p.details.checkOut }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with $s.priceFrom }}<div><dt>{{ $p.details.price }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with $s.minStay }}<div><dt>{{ $p.details.minStay }}</dt><dd>{{ . }}</dd></div>{{ end }}
+        </dl>
+        <p>{{ $p.details.includes }}</p>
+        <p class="muted">{{ $p.details.after }}</p>
+      </div>
+      <div class="card card--quiet">
+        <h2 class="h3">{{ $p.house.title }}</h2>
+        <ul class="ticks">{{ range $p.house.list }}<li>{{ . }}</li>{{ end }}</ul>
+        <p class="muted"><em>{{ $p.house.note }}</em></p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap wrap--narrow reveal">
+    <span class="closing__mark" aria-hidden="true">{{ partial "svg-mark.html" . | safeHTML }}</span>
+    <h2 class="closing__title">{{ $p.final.title }}</h2>
+    <a class="btn btn--gold" href="{{ $url }}"{{ if hasPrefix $url "http" }} rel="noopener"{{ end }}>{{ $p.final.cta }}</a>
+    <p class="micro">{{ $p.final.micro }}</p>
+    <p class="micro">{{ $p.final.ask }} <a href="mailto:{{ $s.email }}">{{ $s.email }}</a></p>
+  </div>
+</section>
+{{ end }}

@@ -39,6 +39,13 @@ npm test             # Playwright suite (starts its own hugo server, see playwri
   branch + PR.
 - End commit messages with the `Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>` line.
 
+## Rabbit Hole Hotel subsite (`rabbithole/`)
+
+`rabbithole/` is a separate, self-contained Hugo site for **rabbithole.vango.ee**
+(en default, `/de/`, `/et/`). The root Vango build ignores it. It deploys as its
+own Cloudflare Worker (`rabbithole/wrangler.jsonc`, Root directory `rabbithole`).
+Copy lives in `rabbithole/content/*.md` front matter; see `rabbithole/README.md`.
+
 ## Content layout
 
 - Bilingual: **et** is default (`/…`), **en** lives under `/en/…`. Folder names
