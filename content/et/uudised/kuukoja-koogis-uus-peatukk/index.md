@@ -4,7 +4,7 @@ translationKey: "uudised-kuukoja-koogi-uuendus"
 slug: "kuukoja-koogis-uus-peatukk"
 date: 2026-09-15
 summary: "Kuukoja köök sai Sinilind ehituse abiga põhjaliku uuenduse — uued ahjud, nõudepesumasin ja mahukas külmik koos sügavkülmaga."
-cover: "2026-09-kuukoda-koogi-0-ehitus.jpg"
+cover: "2026-09-kuukoda-koogi-valmis.jpg"
 ---
 
 Septembris kostis Kuukoja köögist haamrikopsimist. Köök läbis põhjaliku

@@ -4,7 +4,7 @@ translationKey: "uudised-kuukoja-koogi-uuendus"
 slug: "new-chapter-in-kuukoda-kitchen"
 date: 2026-09-15
 summary: "With help from our old friends at Sinilind ehitus, Kuukoda's kitchen got a thorough makeover — new ovens, a dishwasher, and a spacious fridge with freezer."
-cover: "2026-09-kuukoda-koogi-0-ehitus.jpg"
+cover: "2026-09-kuukoda-koogi-valmis.jpg"
 ---
 
 In September, the sound of hammering rang out from Kuukoda's kitchen. The
