@@ -16,7 +16,7 @@ liigub mõni järvehaldjas.
 Nii nagu muinasjuttudes ikka, vajas ka see maja nime. Panime kolm varianti
 lauale ja palusime rahval valida:
 
-- **Järvehaldija saun** — kui usud, et järvel on oma salapärane hoidja
+- **Järvehaldja saun** — kui usud, et järvel on oma salapärane hoidja
 - **Järveleegi saun** — kui nimi peaks kandma tule soojust ja vee peegeldust
 - **Poolkuu saun** — kuna leiliruumist avaneb vaade järvele läbi poolkuu-kujulise akna
 
