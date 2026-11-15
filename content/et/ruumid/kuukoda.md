@@ -10,7 +10,7 @@ gallery:
   - "img/uploads/2015-01-kuutuba-1-scaled.jpg"
   - "img/uploads/2026-09-kuukoda-koogi-valmis.jpg"
   - "img/uploads/2026-09-kuukoda-koogi-saareke.jpg"
-  - "img/uploads/2026-09-kuukoda-koogi-ahi.jpg"
+  - "img/uploads/2026-09-kuukoda-unimaguni-tuba.jpg"
   - "img/uploads/2026-09-kuukoda-koogi-kulmik.jpg"
   - "img/uploads/2026-09-kuukoda-koogi-noudepesumasin.jpg"
   - "img/uploads/2015-01-kuukoda_tuba2-scaled.jpg"
