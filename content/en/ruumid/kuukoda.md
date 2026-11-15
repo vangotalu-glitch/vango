@@ -3,12 +3,16 @@ title: "Moon Chamber"
 translationKey: "kuukoda"
 slug: "moon-chamber"
 weight: 30
-hero: "img/uploads/2015-01-kuukoda_fassaad-scaled.jpg"
+hero: "img/uploads/2026-09-kuukoda-fassaad.jpg"
 gallery:
   - "img/uploads/2015-01-kuukoda_talvel-scaled.jpg"
   - "img/uploads/2015-01-uus13.jpg"
   - "img/uploads/2015-01-kuutuba-1-scaled.jpg"
-  - "img/uploads/2015-01-kuutuba_k88k-scaled.jpg"
+  - "img/uploads/2026-09-kuukoda-koogi-valmis.jpg"
+  - "img/uploads/2026-09-kuukoda-koogi-saareke.jpg"
+  - "img/uploads/2026-09-kuukoda-koogi-ahi.jpg"
+  - "img/uploads/2026-09-kuukoda-koogi-kulmik.jpg"
+  - "img/uploads/2026-09-kuukoda-koogi-noudepesumasin.jpg"
   - "img/uploads/2015-01-kuukoda_tuba5-scaled.jpg"
   - "img/uploads/2015-01-kuukoda_wc-scaled.jpg"
 animations:
